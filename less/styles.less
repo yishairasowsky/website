@@ -9,7 +9,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 71px;
+    margin-bottom: 101px;
     background: url(../images/white_tiles.png);
 }
 
@@ -135,7 +135,7 @@ header#ios {
 
     .navbar {
         .navbar-nav {
-            margin-right: 70px;
+            margin-right: 55px;
         }
     }
 }
@@ -260,10 +260,20 @@ footer {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 71px;
+    height: 101px;
     color: white;
     background-color: @brand-dark-accent;
-    padding: 25px 0;
+    padding: 30px 0;
+
+    .container {
+        position: relative;
+
+        .social-buttons {
+            position: absolute;
+            right: 0;
+            top: -20px;
+        }
+    }
 }
 
 .content {
@@ -326,4 +336,33 @@ footer {
 
 .btn-xl {
     .button-size(12px; 20px; (@font-size-base * 1.5); 1.5; @btn-border-radius-large);
+}
+
+.btn-social {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn-outline {
+    color: white;
+    font-size: 20px;
+    border: solid 2px white;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: @brand-primary;
+        background: white;
+        border: solid 2px white;
+    }
 }
