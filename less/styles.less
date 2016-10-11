@@ -9,8 +9,13 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 101px;
+    margin-bottom: 160px;
     background: url(../images/white_tiles.png);
+
+    @media(min-width:@screen-sm) {
+        /* Margin bottom by footer height */
+        margin-bottom: 101px;
+    }
 }
 
 p {
@@ -260,18 +265,22 @@ footer {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 101px;
+    height: 160px;
     color: white;
     background-color: @brand-dark-accent;
     padding: 30px 0;
 
-    .container {
-        position: relative;
+    @media(min-width:@screen-sm) {
+        height: 101px;
 
-        .social-buttons {
-            position: absolute;
-            right: 0;
-            top: -20px;
+        .container {
+            position: relative;
+
+            .social-buttons {
+                position: absolute;
+                right: 0;
+                top: -7px;
+            }
         }
     }
 }
@@ -355,7 +364,6 @@ footer {
     border: solid 2px white;
     background: transparent;
     transition: all 0.3s ease-in-out;
-    margin-top: 15px;
 
     &:hover,
     &:focus,
