@@ -20,10 +20,49 @@ title: Browser Extension Getting Started
                     </div>
                 </div>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/Tnu2-yoWHw8?hd=1&vq=hd720&quality=high&version=3"
-                            frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/CMtBN72TFHs?hd=1&amp;vq=hd720&amp;quality=high&amp;version=3&amp;enablejsapi=1&amp;rel=0"
+                            frameborder="0" allowfullscreen id="browser-video"></iframe>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    var tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady(event) {
+        player = new YT.Player('browser-video', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    var pauseFlag = false;
+    function onPlayerReady(event) {
+        // do nothing
+    }
+
+    function onPlayerStateChange(event) {
+        // user clicks to Play
+        if (event.data == YT.PlayerState.PLAYING) {
+            gaEvent('Play', 'Browser Walkthrough', 'Videos');
+            pauseFlag = true;
+        }
+        // user clicks to Pause
+        if (event.data == YT.PlayerState.PAUSED && pauseFlag) {
+            gaEvent('Pause', 'Browser Walkthrough', 'Videos');
+            pauseFlag = false;
+        }
+        // video ends
+        if (event.data == YT.PlayerState.ENDED) {
+            gaEvent('Ended', 'Browser Walkthrough', 'Videos');
+        }
+    }
+</script>

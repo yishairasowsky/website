@@ -8,7 +8,7 @@
     <meta name="apple-itunes-app" content="app-id=1137397744">
 
     <title>{% if page.title %} {{ page.title }} | {% endif %}bitwarden</title>
-    
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <meta name="x-stylesheet-test-bs" content="" class="invisible" />
     <script>!function (a, b, c) { var d, e = document, f = e.getElementsByTagName('SCRIPT'), g = f[f.length - 1].previousElementSibling, h = e.defaultView && e.defaultView.getComputedStyle ? e.defaultView.getComputedStyle(g) : g.currentStyle; if (h && h[a] !== b) for (d = 0; d < c.length; d++) e.write('<link rel="stylesheet" href="' + c[d] + '"/>') }('visibility', 'hidden', ['lib\/bootstrap\/css\/bootstrap.min.css?v={{"now" | date: "%s"}}']);</script>
@@ -124,12 +124,18 @@
         ga('create', 'UA-81915606-4', 'auto');
         ga('send', 'pageview');
 
-        function gaEvent(action) {
-            ga('send', {
+        function gaEvent(action, label, category) {
+            var obj = {
                 hitType: 'event',
-                eventCategory: 'main',
+                eventCategory: category || 'main',
                 eventAction: action
-            });
+            };
+
+            if (label) {
+                obj['eventLabel'] = label;
+            }
+
+            ga('send', obj);
         }
     </script>
 </body>
