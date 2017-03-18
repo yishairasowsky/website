@@ -9,15 +9,8 @@
 
     <title>{% if page.title %} {{ page.title }} | {% endif %}bitwarden</title>
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <meta name="x-stylesheet-test-bs" content="" class="invisible" />
-    <script>!function (a, b, c) { var d, e = document, f = e.getElementsByTagName('SCRIPT'), g = f[f.length - 1].previousElementSibling, h = e.defaultView && e.defaultView.getComputedStyle ? e.defaultView.getComputedStyle(g) : g.currentStyle; if (h && h[a] !== b) for (d = 0; d < c.length; d++) e.write('<link rel="stylesheet" href="' + c[d] + '"/>') }('visibility', 'hidden', ['lib\/bootstrap\/css\/bootstrap.min.css?v={{"now" | date: "%s"}}']);</script>
-
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-    <meta name="x-stylesheet-test-fa" content="" class="fa" />
-    <script>!function (a, b, c) { var d, e = document, f = e.getElementsByTagName('SCRIPT'), g = f[f.length - 1].previousElementSibling, h = e.defaultView && e.defaultView.getComputedStyle ? e.defaultView.getComputedStyle(g) : g.currentStyle; if (h && h[a] !== b) for (d = 0; d < c.length; d++) e.write('<link rel="stylesheet" href="' + c[d] + '"/>') }('font-family', 'FontAwesome', ['lib\/font-awesome\/css\/font-awesome.min.css?v={{"now" | date: "%s"}}']);</script>
-
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic%7CLato:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic" rel="stylesheet" type="text/css">
 
     <link href="/css/styles-new.min.css?v={{'now' | date: "%s"}}" rel="stylesheet">
 
@@ -38,12 +31,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><i class="fa fa-shield"></i> <strong>bit</strong>warden</a>
+                <a class="navbar-brand" href="/"><i class="fa fa-shield fa-lg"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">Log In</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     {{content}}
+
+    <footer>
+
+    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>(window.jQuery || document.write('<script src="lib\/jquery\/jquery.min.js?v={{"now" | date: "%s"}}"><\/script>'));</script>

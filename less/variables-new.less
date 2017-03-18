@@ -11,8 +11,41 @@
 @brand-secondary: #2c3e50;
 @brand-dark-accent: #222d32;
 
-@font-size-base: 15px;
-@font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-size-base: 16px;
+@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @headings-font-family: "Open Sans", sans-serif;
 @text-color: @brand-secondary;
 @gray-lighter: lighten(#000, 93.5%);
+
+@navbar-height: 80px;
+@navbar-margin-bottom: 0;
+@navbar-border-radius: 0;
+
+//=== Inverted navbar
+// Reset inverted navbar basics
+@navbar-inverse-color: #fff;
+@navbar-inverse-bg: @brand-primary;
+@navbar-inverse-border: @brand-primary;
+
+// Inverted navbar links
+@navbar-inverse-link-color: #fff;
+@navbar-inverse-link-hover-color: #fff;
+@navbar-inverse-link-hover-bg: transparent;
+@navbar-inverse-link-active-color: #fff;
+@navbar-inverse-link-active-bg: @brand-primary;
+@navbar-inverse-link-disabled-color: #444;
+@navbar-inverse-link-disabled-bg: transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color: @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color: #fff;
+@navbar-inverse-brand-hover-bg: transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg: #333;
+@navbar-inverse-toggle-icon-bar-bg: #fff;
+@navbar-inverse-toggle-border-color: #333;
+
+//== Container sizes
+// Large screen / wide desktop
+@container-large-desktop: @container-desktop;

@@ -1,4 +1,60 @@
-﻿@import (reference) "../node_modules/bootstrap/less/bootstrap.less";
+﻿@import "../node_modules/bootstrap/less/bootstrap.less";
 @import "variables-new.less";
 @import "mixins.less";
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 150px;
+}
+
+header {
+    background-color: @brand-primary;
+    padding: 50px 0;
+    margin: 0;
+    color: #fff;
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .summary {
+        font-size: 22px;
+        font-weight: 300;
+    }
+}
+
+section {
+    &.alt {
+        background-color: #ecf0f5;
+    }
+
+    padding: 100px 0;
+
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 0 0 10px 0;
+    }
+
+    .feature-box {
+        padding: 50px 0;
+    }
+}
+
+footer {
+    background-color: @brand-dark-accent;
+    height: 150px;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
