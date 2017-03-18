@@ -106,7 +106,7 @@ gulp.task('lesscompile', function (cb) {
 });
 
 gulp.task('less', function () {
-    return gulp.src(paths.lessDir + 'styles.less')
+    return gulp.src(paths.lessDir + 'styles*.less')
         .pipe(less())
         .pipe(gulp.dest(paths.cssDir));
 });
