@@ -21,15 +21,16 @@ body {
 }
 
 .btn-xl {
-  .button-size(20px; 25px; @font-size-large; @line-height-large; 5px);
+    .button-size(20px; 25px; @font-size-large; @line-height-large; 5px);
 }
 
 header {
-    padding: 40px 0 0;
-    margin: 0 0 70px 0;
+    padding-top: 15px;
+    margin-bottom: 40px;
     color: #fff;
     position: relative;
-    min-height: 380px;
+    min-height: 300px;
+    text-align: center;
 
     &:before {
         content: "";
@@ -44,27 +45,62 @@ header {
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 25px;
+        margin-top: 0;
     }
 
     .summary {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 300;
     }
 
     .container {
         position: relative;
     }
-}
 
-.heroo {
-    position: absolute;
-    top: -30px;
-    right: -223px;
+    .heroo {
+        display: none;
+    }
+
+    @media(min-width:@screen-sm) {
+        padding-top: 30px;
+        margin-bottom: 70px;
+        min-height: 380px;
+        text-align: left;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .heroo {
+            position: absolute;
+            top: -30px;
+            display: block;
+            right: -355px;
+        }
+
+        .summary {
+            font-size: 20px;
+        }
+    }
+
+    @media(min-width:@screen-md) {
+        h1 {
+            font-size: 35px;
+        }
+
+        .heroo {
+            right: -223px;
+        }
+
+        .summary {
+            font-size: 22px;
+        }
+    }
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 
     &.alt {
         background-color: #ecf0f5;
@@ -84,7 +120,19 @@ section {
     }
 
     .feature-box {
-        padding: 50px 0;
+        padding: 30px 0;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    @media(min-width:@screen-sm) {
+        padding: 100px 0;
+
+        .feature-box {
+            padding: 60px 0;
+        }
     }
 }
 
