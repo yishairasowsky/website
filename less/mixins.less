@@ -1,3 +1,7 @@
 ﻿@import (reference) "../node_modules/bootstrap/less/bootstrap.less";
 @import (reference) "../node_modules/bootstrap/less/mixins.less";
 @import (reference) "../node_modules/bootstrap/less/variables.less";
+
+.browser-icon(@name) {
+    .img-retina('/images/browsers/@{name}_32x32.png', '/images/browsers/@{name}_64x64.png', 32px, 32px);
+}

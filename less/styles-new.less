@@ -145,3 +145,111 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+// Lists
+
+.list-browsers {
+    li {
+        margin-bottom: 10px;
+
+        a {
+            display: block;
+            padding: 5px 0 5px 40px;
+            background-position: center left;
+            background-repeat: no-repeat;
+
+            &.vivaldi {
+                .browser-icon('vivaldi');
+            }
+
+            &.edge {
+                .browser-icon('edge');
+            }
+
+            &.chrome {
+                .browser-icon('chrome');
+            }
+
+            &.opera {
+                .browser-icon('opera');
+            }
+
+            &.firefox {
+                .browser-icon('firefox');
+            }
+
+            &.brave {
+                .browser-icon('brave');
+            }
+
+            &.tor {
+                .browser-icon('tor');
+            }
+        }
+    }
+}
+
+.list-store {
+    a {
+        display: inline-block;
+        background-position: top left;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+
+        &.apple {
+            width: 203px;
+            height: 61px;
+            .img-retina('/images/stores/appstore.png', '/images/stores/appstore_2x.png', 203px, 61px);
+        }
+
+        &.google {
+            width: 204px;
+            height: 61px;
+            .img-retina('/images/stores/playstore.png', '/images/stores/playstore_2x.png', 204px, 61px);
+        }
+
+        &.amazon {
+            width: 176px;
+            height: 60px;
+            .img-retina('/images/stores/amazonstore.png', '/images/stores/amazonstore_2x.png', 176px, 60px);
+        }
+    }
+}
+
+.list-repos {
+    li {
+        margin-bottom: 10px;
+
+        a {
+            display: block;
+            padding: 15px 10px 15px 45px;
+            background-color: @gray-lighter;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            .box-shadow(e("0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)"));
+
+            &:hover {
+                .box-shadow(e("0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)"));
+                text-decoration: none;
+            }
+
+            small {
+                display: block;
+                font-size: 70%;
+                color: @text-muted;
+            }
+
+            .fa {
+                position: absolute;
+                left: 0;
+                width: 45px;
+                top: 19px;
+                text-align: center;
+                font-size: 22px;
+            }
+        }
+    }
+}

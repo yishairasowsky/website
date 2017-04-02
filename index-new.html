@@ -23,8 +23,10 @@ title: The Best Free Password Manager
             <i class="fa fa-lock fa-4x"></i>
             <h2>Essential to online safety</h2>
         </div>
-        <p>Password theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.</p>
-        <p>Security experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? bitwarden makes it easy for you to create, store, and access your passwords.</p>
+        <div class="feature-box">
+            <p>Password theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.</p>
+            <p>Security experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? bitwarden makes it easy for you to create, store, and access your passwords.</p>
+        </div>
     </div>
 </section>
 <section class="alt">
@@ -38,22 +40,28 @@ title: The Best Free Password Manager
             <div class="row">
                 <div class="col-md-6">
                     <h3>Desktop</h3>
-                    <p>Access bitwarden on Windows, macOS, and Linux through our array of browser extensions.</p>
+                    <p>
+                        Access bitwarden on Windows, macOS, and Linux desktops through our array of browser extensions.
+                    </p>
+                    <p>
+                        <small class="text-muted">* native desktop applications coming soon</small>
+                    </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 list-browsers">
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-fw fa-lg fa-chrome"></i> Chrome</li>
-                                <li><i class="fa fa-fw fa-lg fa-firefox"></i> Firefox</li>
-                                <li><i class="fa fa-fw fa-lg fa-opera"></i> Opera</li>
+                                <li><a href="#" class="chrome">Chrome</a></li>
+                                <li><a href="#" class="firefox">Firefox</a></li>
+                                <li><a href="#" class="opera">Opera</a></li>
+                                <li><a href="#" class="edge">Edge <small class="text-muted">(coming soon)</small></a></li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-fw fa-lg fa-lemon-o"></i> Brave</li>
-                                <li><i class="fa fa-fw fa-lg fa-vimeo"></i> Vivaldi</li>
-                                <li class="text-muted"><i class="fa fa-fw fa-lg fa-edge"></i> Edge <small>(coming soon)</small></li>
+                                <li><a href="#" class="brave">Brave</a></li>
+                                <li><a href="#" class="vivaldi">Vivaldi</a></li>
+                                <li><a href="#" class="tor">Tor</a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,14 +72,12 @@ title: The Best Free Password Manager
             <div class="row">
                 <div class="col-md-6">
                     <h3>Mobile</h3>
-                    <p>Take bitwarden on the go.</p>
+                    <p>Take bitwarden on the go with our mobile apps for your phone or tablet device.</p>
                 </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-fw fa-lg fa-apple"></i> iOS</li>
-                        <li><i class="fa fa-fw fa-lg fa-android"></i> Android</li>
-                        <li><i class="fa fa-fw fa-lg fa-amazon"></i> Amazon</li>
-                    </ul>
+                <div class="col-md-6 list-store">
+                    <a href="#" class="apple"></a>
+                    <a href="#" class="google"></a>
+                    <a href="#" class="amazon"></a>
                 </div>
             </div>
         </div>
@@ -82,7 +88,7 @@ title: The Best Free Password Manager
                     <p>Stuck without any of your devices? Using a friend's computer? You can access your bitwarden vault from any web enabled device by using our web vault.</p>
                 </div>
                 <div class="col-md-6">
-                    <a class="btn btn-primary btn-xl">
+                    <a class="btn btn-default btn-xl">
                         <i class="fa fa-globe"></i>
                         Access Web Vault
                     </a>
@@ -94,41 +100,82 @@ title: The Best Free Password Manager
 <section>
     <div class="container">
         <div class="text-center">
-            <i class="fa fa-github fa-4x"></i>
+            <i class="fa fa-openid fa-4x"></i>
             <h2>Open source</h2>
             <p>It's a requirement.</p>
         </div>
-        <div class="row">
-            <div class="col-md-5">
-                <p>
-                    bitwarden is 100% open source software. The source code for bitwarden is hosted on GitHub and all are free to
-                    review, audit, and contribute.
-                </p><p>
-                    We believe that being open source is one of the most important features of
-                    bitwarden. Source code transparency is an absolute requirement for software solutions like bitwarden.
-                </p>
-            </div>
-            <div class="col-md-7">
-                <div class="feature-box">
+        <div class="feature-box">
+            <p>
+                bitwarden is 100% open source software. The source code for bitwarden is hosted on GitHub and all are free to
+                review, audit, and contribute.
+            </p>
+            <p>
+                We believe that being open source is one of the most important features of
+                bitwarden. Source code transparency is an absolute requirement for software solutions like bitwarden.
+            </p>
+        </div>
+        <div class="feature-box">
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <i class="fa fa-github fa-4x" style="font-size: 200px"></i>
+                </div>
+                <div class="col-md-7 list-repos">
                     <h3>Code Repositories</h3>
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-fw fa-lg fa-database"></i> Core</li>
-                                <li><i class="fa fa-fw fa-lg fa-globe"></i> Web</li>
-                                <li class="text-muted"><i class="fa fa-fw fa-lg fa-desktop"></i> Desktop <small>(coming soon)</small></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-database"></i> Core
+                                        <small>github.com/bitwarden/core</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-lg fa-globe"></i> Web
+                                        <small>github.com/bitwarden/web</small>
+                                    </a>
+                                </li>
+                                <li class="text-muted">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-lg fa-desktop"></i> Desktop <small>(coming soon)</small>
+                                        <small>github.com/bitwarden/desktop</small>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-fw fa-lg fa-chrome"></i> Browser</li>
-                                <li><i class="fa fa-fw fa-lg fa-tablet"></i> Mobile</li>
-                                <li class="text-muted"><i class="fa fa-fw fa-lg fa-terminal"></i> CLI <small>(coming soon)</small></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chrome"></i> Browser
+                                        <small>github.com/bitwarden/browser</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-tablet"></i> Mobile
+                                        <small>github.com/bitwarden/mobile</small>
+                                    </a>
+                                </li>
+                                <li class="text-muted">
+                                    <a href="#">
+                                        <i class="fa fa-fw fa-lg fa-terminal"></i> CLI <small>(coming soon)</small>
+                                        <small>github.com/bitwarden/cli</small>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="feature-box">
+            </div>
+        </div>
+        <div class="feature-box">
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <i class="fa fa-gitlab fa-4x" style="font-size: 200px"></i>
+                </div>
+                <div class="col-md-7">
                     <h3>Developer Chat</h3>
                     <p>Join us in our Gitter chat channel to talk with the bitwarden developers.</p>
                     <a class="btn btn-default btn-lg" href="https://gitter.im/bitwarden/Lobby" target="_blank">
@@ -147,76 +194,78 @@ title: The Best Free Password Manager
             <h2>A plan for everyone</h2>
             <p>bitwarden offers powerful features for personal users and business organizations.</p>
         </div>
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h3>Personal</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                FREE
-                            </div>
-                            <div class="panel-body">
-                                <div class="price">FREE</div>
-                                <div class="interval">forever</div>
-                            </div>
-                            <div class="panel-footer">
-                                <a href="#" class="btn btn-block btn-primary">
-                                    Create Account
-                                </a>
+        <div class="feature-box">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h3>Personal</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    FREE
+                                </div>
+                                <div class="panel-body">
+                                    <div class="price">FREE</div>
+                                    <div class="interval">forever</div>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="#" class="btn btn-block btn-primary">
+                                        Create Account
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-heading">
-                                Premium
-                            </div>
-                            <div class="panel-body">
-                                <div class="price">$1</div>
-                                <div class="interval">per month</div>
-                            </div>
-                            <div class="panel-footer">
-                                <a href="#" class="btn btn-block btn-primary">
-                                    Create Account
-                                </a>
+                        <div class="col-md-6">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    Premium
+                                </div>
+                                <div class="panel-body">
+                                    <div class="price">$1</div>
+                                    <div class="interval">per month</div>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="#" class="btn btn-block btn-primary">
+                                        Create Account
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <h3>Business</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-heading">
-                                Teams
-                            </div>
-                            <div class="panel-body">
-                                <div class="price">$1</div>
-                                <div class="interval">per month</div>
-                            </div>
-                            <div class="panel-footer">
-                                <a href="#" class="btn btn-block btn-primary">
-                                    Create Account
-                                </a>
+                <div class="col-md-6 text-center">
+                    <h3>Business</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    Teams
+                                </div>
+                                <div class="panel-body">
+                                    <div class="price">$1</div>
+                                    <div class="interval">per month</div>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="#" class="btn btn-block btn-primary">
+                                        Create Account
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-heading">
-                                Enterprise
-                            </div>
-                            <div class="panel-body">
-                                <div class="price">$1</div>
-                                <div class="interval">per month</div>
-                            </div>
-                            <div class="panel-footer">
-                                <a href="#" class="btn btn-block btn-primary">
-                                    Create Account
-                                </a>
+                        <div class="col-md-6">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    Enterprise
+                                </div>
+                                <div class="panel-body">
+                                    <div class="price">$1</div>
+                                    <div class="interval">per month</div>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="#" class="btn btn-block btn-primary">
+                                        Create Account
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
