@@ -134,6 +134,18 @@ section {
             padding: 60px 0;
         }
     }
+
+    &.clouds {
+        background-image: url('/images/cloud-right.png');
+        background-position: right -700px;
+        background-repeat: no-repeat;
+    }
+
+    &.code {
+        background-image: url('/images/code-left.jpg');
+        background-position: -30px center;
+        background-repeat: repeat-y;
+    }
 }
 
 footer {
@@ -153,10 +165,32 @@ footer {
         margin-bottom: 10px;
 
         a {
-            display: block;
-            padding: 5px 0 5px 40px;
-            background-position: center left;
+            background-position: 15px center;
             background-repeat: no-repeat;
+            display: block;
+            padding: 15px 10px 15px 60px;
+            background-color: #fafafa;
+            border: 1px solid darken(@gray-lighter, 15%);
+            border-radius: 5px;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+
+            &:hover {
+                text-decoration: none;
+                background-color: #f8f8f8;
+
+                .fa {
+                    color: @link-hover-color;
+                }
+            }
+
+            small {
+                font-size: 70%;
+                color: @text-muted;
+            }
 
             &.vivaldi {
                 .browser-icon('vivaldi');
@@ -223,21 +257,31 @@ footer {
         a {
             display: block;
             padding: 15px 10px 15px 45px;
-            background-color: @gray-lighter;
+            background-color: #fafafa;
+            border: 1px solid darken(@gray-lighter, 15%);
+            border-radius: 5px;
             position: relative;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
-            .box-shadow(e("0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)"));
 
             &:hover {
-                .box-shadow(e("0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)"));
                 text-decoration: none;
+                background-color: #f8f8f8;
+
+                .fa {
+                    color: @link-hover-color;
+                }
             }
 
             small {
                 display: block;
+                font-size: 70%;
+                color: @text-muted;
+            }
+
+            .small {
                 font-size: 70%;
                 color: @text-muted;
             }
@@ -249,7 +293,35 @@ footer {
                 top: 19px;
                 text-align: center;
                 font-size: 22px;
+                color: @text-muted;
             }
         }
     }
+}
+
+.gitter-hello-world {
+    display: inline-block;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 190px;
+    .img-retina('/images/gitter-hello-world.png', '/images/gitter-hello-world_2x.png', 185px, 190px);
+}
+
+.osi {
+    display: inline-block;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 154px;
+    height: 150px;
+    .img-retina('/images/osi.png', '/images/osi_2x.png', 154px, 150px);
+}
+
+.connected {
+    display: inline-block;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 151px;
+    .img-retina('/images/connected.png', '/images/connected_2x.png', 234px, 151px);
 }

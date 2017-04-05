@@ -29,32 +29,44 @@ title: The Best Free Password Manager
         </div>
     </div>
 </section>
-<section class="alt">
+<section class="alt clouds">
     <div class="container">
         <div class="text-center">
-            <i class="fa fa-refresh fa-4x"></i>
+            <div class="connected"></div>
             <h2>Sync all of your devices</h2>
-            <p>A password manager is useless if you can't easily access it from all of your devices.</p>
+            <p>A password manager is useless if you can't easily access it.</p>
+        </div>
+        <div class="feature-box">
+            <p>
+                Our secure cloud syncing features allow you to access your data from anywhere, on any device!
+                Your vault is conveniently optimized for use on desktop, laptop, tablet, and phone devices.
+            </p>
+            <p>
+                Since all of your data is fully encrypted before it ever leaves your device, <u>only you</u> have access to it.
+                Not even the team at bitwarden can read your data, even if we wanted to. Your data is sealed with AES encryption,
+                salted hashing, and PBKDF2.
+            </p>
+            <p><a href="#"><i class="fa fa-long-arrow-right fa-fw"></i>Learn more about bitwarden security</a></p>
         </div>
         <div class="feature-box">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <h3>Desktop</h3>
                     <p>
                         Access bitwarden on Windows, macOS, and Linux desktops through our array of browser extensions.
                     </p>
-                    <p>
-                        <small class="text-muted">* native desktop applications coming soon</small>
+                    <p class="small text-muted">
+                        * native desktop applications coming soon
                     </p>
                 </div>
-                <div class="col-md-6 list-browsers">
+                <div class="col-md-7 list-browsers">
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-unstyled">
                                 <li><a href="#" class="chrome">Chrome</a></li>
                                 <li><a href="#" class="firefox">Firefox</a></li>
                                 <li><a href="#" class="opera">Opera</a></li>
-                                <li><a href="#" class="edge">Edge <small class="text-muted">(coming soon)</small></a></li>
+                                <li><a href="#" class="edge">Edge <small> - coming soon</small></a></li>
                             </ul>
                         </div>
                         <div class="col-md-6">
@@ -70,11 +82,14 @@ title: The Best Free Password Manager
         </div>
         <div class="feature-box">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <h3>Mobile</h3>
                     <p>Take bitwarden on the go with our mobile apps for your phone or tablet device.</p>
+                    <p class="small text-muted">
+                        * windows UWP coming soon
+                    </p>
                 </div>
-                <div class="col-md-6 list-store">
+                <div class="col-md-7 list-store">
                     <a href="#" class="apple"></a>
                     <a href="#" class="google"></a>
                     <a href="#" class="amazon"></a>
@@ -83,24 +98,29 @@ title: The Best Free Password Manager
         </div>
         <div class="feature-box">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <h3>Web</h3>
                     <p>Stuck without any of your devices? Using a friend's computer? You can access your bitwarden vault from any web enabled device by using our web vault.</p>
                 </div>
-                <div class="col-md-6">
-                    <a class="btn btn-default btn-xl">
-                        <i class="fa fa-globe"></i>
-                        Access Web Vault
+                <div class="col-md-7">
+                    <p>
+                        <a class="btn btn-default btn-xl">
+                            <i class="fa fa-globe"></i>
+                            Access Web Vault
+                        </a>
+                    </p>
+                    <a href="https://vault.bitwarden.com" class="text-muted small">
+                        vault.bitwarden.com
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section>
+<section class="code">
     <div class="container">
         <div class="text-center">
-            <i class="fa fa-openid fa-4x"></i>
+            <div class="osi"></div>
             <h2>Open source</h2>
             <p>It's a requirement.</p>
         </div>
@@ -113,6 +133,7 @@ title: The Best Free Password Manager
                 We believe that being open source is one of the most important features of
                 bitwarden. Source code transparency is an absolute requirement for software solutions like bitwarden.
             </p>
+            <p><a href="#"><i class="fa fa-long-arrow-right fa-fw"></i>Check out bitwarden on GitHub</a></p>
         </div>
         <div class="feature-box">
             <div class="row">
@@ -138,7 +159,7 @@ title: The Best Free Password Manager
                                 </li>
                                 <li class="text-muted">
                                     <a href="#">
-                                        <i class="fa fa-fw fa-lg fa-desktop"></i> Desktop <small>(coming soon)</small>
+                                        <i class="fa fa-fw fa-lg fa-desktop"></i> Desktop <span class="small"> - coming soon</span>
                                         <small>github.com/bitwarden/desktop</small>
                                     </a>
                                 </li>
@@ -160,7 +181,7 @@ title: The Best Free Password Manager
                                 </li>
                                 <li class="text-muted">
                                     <a href="#">
-                                        <i class="fa fa-fw fa-lg fa-terminal"></i> CLI <small>(coming soon)</small>
+                                        <i class="fa fa-fw fa-lg fa-terminal"></i> CLI <span class="small"> - coming soon</span>
                                         <small>github.com/bitwarden/cli</small>
                                     </a>
                                 </li>
@@ -173,14 +194,19 @@ title: The Best Free Password Manager
         <div class="feature-box">
             <div class="row">
                 <div class="col-md-5 text-center">
-                    <i class="fa fa-gitlab fa-4x" style="font-size: 200px"></i>
+                    <div class="gitter-hello-world"></div>
                 </div>
                 <div class="col-md-7">
                     <h3>Developer Chat</h3>
                     <p>Join us in our Gitter chat channel to talk with the bitwarden developers.</p>
-                    <a class="btn btn-default btn-lg" href="https://gitter.im/bitwarden/Lobby" target="_blank">
-                        <i class="fa fa-comments"></i>
-                        Join Gitter Chat
+                    <p>
+                        <a class="btn btn-default btn-xl" href="https://gitter.im/bitwarden/Lobby" target="_blank">
+                            <i class="fa fa-comments"></i>
+                            Join Developer Chat
+                        </a>
+                    </p>
+                    <a href="https://gitter.im/bitwarden/Lobby" target="_blank" class="text-muted small">
+                        gitter.im/bitwarden/Lobby
                     </a>
                 </div>
             </div>
