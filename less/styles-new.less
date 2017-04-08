@@ -20,6 +20,10 @@ body {
     }
 }
 
+.btn-secondary {
+    .button-variant(#ffffff; @brand-secondary; @brand-secondary);
+}
+
 .btn-xl {
     .button-size(20px; 25px; @font-size-large; @line-height-large; 5px);
 }
@@ -324,4 +328,47 @@ footer {
     width: 234px;
     height: 151px;
     .img-retina('/images/connected.png', '/images/connected_2x.png', 234px, 151px);
+}
+
+.panel-secondary {
+    .panel-variant(@brand-secondary; #ffffff; @brand-secondary; @brand-secondary);
+}
+
+// Plan
+
+.plans {
+    .panel-heading {
+        text-align: center;
+    }
+
+    .panel-body {
+        font-size: 14px;
+    }
+
+    .prices {
+        text-align: center;
+        margin-bottom: 15px;
+
+        .price {
+            font-size: 25px;
+        }
+
+        .interval {
+            font-size: 90%;
+        }
+
+        .additional {
+            margin-top: 10px;
+            font-size: 90%;
+        }
+    }
+
+    ul {
+        font-size: 14px;
+        margin-left: 20px;
+
+        .fa {
+            color: @brand-success;
+        }
+    }
 }
