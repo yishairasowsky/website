@@ -324,27 +324,36 @@ footer {
     display: inline-block;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 154px;
-    height: 150px;
-    .img-retina('/images/osi.png', '/images/osi_2x.png', 154px, 150px);
+    width: 236px;
+    height: 229px;
+    .img-retina('/images/osi.png', '/images/osi_2x.png', 236px, 229px);
 }
 
 .connected {
     display: inline-block;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 234px;
-    height: 151px;
-    .img-retina('/images/connected.png', '/images/connected_2x.png', 234px, 151px);
+    width: 465px;
+    height: 300px;
+    .img-retina('/images/connected.png', '/images/connected_2x.png', 465px, 300px);
+}
+
+.vault {
+    display: inline-block;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 318px;
+    height: 301px;
+    .img-retina('/images/vault.png', '/images/vault_2x.png', 318px, 301px);
 }
 
 .user-group {
     display: inline-block;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 276px;
-    height: 200px;
-    .img-retina('/images/user-group.png', '/images/user-group_2x.png', 276px, 200px);
+    width: 414px;
+    height: 300px;
+    .img-retina('/images/user-group.png', '/images/user-group_2x.png', 414px, 300px);
 }
 
 .panel-secondary {
@@ -360,6 +369,7 @@ footer {
 
     .panel-body {
         font-size: 14px;
+        min-height: 230px;
     }
 
     .prices {
@@ -383,9 +393,11 @@ footer {
     ul {
         font-size: 14px;
         margin-left: 20px;
+    }
+}
 
-        .fa {
-            color: @brand-success;
-        }
+ul.checklist {
+    .fa {
+        color: @brand-success;
     }
 }
