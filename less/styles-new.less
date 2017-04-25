@@ -131,6 +131,14 @@ section {
         }
     }
 
+    .subsection {
+        padding-bottom: 180px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
     @media(min-width:@screen-sm) {
         padding: 100px 0;
 
@@ -328,6 +336,15 @@ footer {
     width: 234px;
     height: 151px;
     .img-retina('/images/connected.png', '/images/connected_2x.png', 234px, 151px);
+}
+
+.user-group {
+    display: inline-block;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 276px;
+    height: 200px;
+    .img-retina('/images/user-group.png', '/images/user-group_2x.png', 276px, 200px);
 }
 
 .panel-secondary {
