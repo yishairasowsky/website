@@ -126,7 +126,7 @@ section {
     .feature-box {
         padding: 30px 0;
 
-        &:last-child {
+        &:last-child:not(.force) {
             padding-bottom: 0;
         }
     }
@@ -145,18 +145,30 @@ section {
         .feature-box {
             padding: 60px 0;
         }
+
+        .subsection {
+            padding-bottom: 80px;
+        }
     }
 
-    &.clouds {
-        background-image: url('/images/cloud-right.png');
-        background-position: right -700px;
-        background-repeat: no-repeat;
+    @media(min-width:@screen-md) {
+        &.clouds {
+            background-image: url('/images/cloud-right.png');
+            background-position: right -700px;
+            background-repeat: no-repeat;
+        }
+
+        &.code {
+            background-image: url('/images/code-left.jpg');
+            background-position: -150px center;
+            background-repeat: repeat-y;
+        }
     }
 
-    &.code {
-        background-image: url('/images/code-left.jpg');
-        background-position: -30px center;
-        background-repeat: repeat-y;
+    @media(min-width:@screen-lg) {
+        &.code {
+            background-position: -30px center;
+        }
     }
 }
 
@@ -171,7 +183,6 @@ footer {
 }
 
 // Lists
-
 .list-browsers {
     li {
         margin-bottom: 10px;
@@ -183,6 +194,7 @@ footer {
             padding: 15px 10px 15px 60px;
             background-color: #fafafa;
             border: 1px solid darken(@gray-lighter, 15%);
+            border-left: 5px solid @brand-primary-accent;
             border-radius: 5px;
             position: relative;
             white-space: nowrap;
@@ -271,6 +283,7 @@ footer {
             padding: 15px 10px 15px 45px;
             background-color: #fafafa;
             border: 1px solid darken(@gray-lighter, 15%);
+            border-left: 5px solid @brand-primary-accent;
             border-radius: 5px;
             position: relative;
             white-space: nowrap;
@@ -317,6 +330,7 @@ footer {
     background-repeat: no-repeat;
     width: 185px;
     height: 190px;
+    background-size: 185px, 190px;
     .img-retina('/images/gitter-hello-world.png', '/images/gitter-hello-world_2x.png', 185px, 190px);
 }
 
@@ -324,36 +338,70 @@ footer {
     display: inline-block;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 236px;
-    height: 229px;
-    .img-retina('/images/osi.png', '/images/osi_2x.png', 236px, 229px);
+    width: 200px;
+    height: 193px;
+    background-size: 200px, 193px;
+    .img-retina('/images/osi.png', '/images/osi_2x.png', 200px, 193px);
 }
 
 .connected {
     display: inline-block;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 465px;
-    height: 300px;
-    .img-retina('/images/connected.png', '/images/connected_2x.png', 465px, 300px);
+    width: 285px;
+    height: 184px;
+    background-size: 285px, 184px;
+    .img-retina('/images/connected.png', '/images/connected_2x.png', 285px, 184px);
 }
 
 .vault {
     display: inline-block;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 318px;
-    height: 301px;
-    .img-retina('/images/vault.png', '/images/vault_2x.png', 318px, 301px);
+    width: 220px;
+    height: 208px;
+    background-size: 220px, 208px;
+    .img-retina('/images/vault.png', '/images/vault_2x.png', 220px, 208px);
 }
 
 .user-group {
     display: inline-block;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 414px;
-    height: 300px;
-    .img-retina('/images/user-group.png', '/images/user-group_2x.png', 414px, 300px);
+    width: 285px;
+    height: 207px;
+    background-size: 285px, 207px;
+    .img-retina('/images/user-group.png', '/images/user-group_2x.png', 285px, 207px);
+}
+
+@media(min-width:@screen-sm) {
+    .connected {
+        width: 465px;
+        height: 300px;
+        background-size: 465px, 300px;
+        .img-retina('/images/connected.png', '/images/connected_2x.png', 465px, 300px);
+    }
+
+    .vault {
+        width: 318px;
+        height: 301px;
+        background-size: 318px, 301px;
+        .img-retina('/images/vault.png', '/images/vault_2x.png', 318px, 301px);
+    }
+
+    .user-group {
+        width: 414px;
+        height: 300px;
+        background-size: 414px, 300px;
+        .img-retina('/images/user-group.png', '/images/user-group_2x.png', 414px, 300px);
+    }
+
+    .osi {
+        width: 236px;
+        height: 229px;
+        background-size: 236px, 229px;
+        .img-retina('/images/osi.png', '/images/osi_2x.png', 236px, 229px);
+    }
 }
 
 .panel-secondary {
@@ -361,7 +409,6 @@ footer {
 }
 
 // Plan
-
 .plans {
     .panel-heading {
         text-align: center;
