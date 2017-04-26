@@ -30,10 +30,10 @@ body {
 
 header {
     padding-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: -140px;
     color: #fff;
     position: relative;
-    min-height: 300px;
+    min-height: 405px;
     text-align: center;
 
     &:before {
@@ -64,11 +64,11 @@ header {
 
     @media(min-width:@screen-sm) {
         padding-top: 30px;
-        margin-bottom: -140px;
         min-height: 475px;
+        margin-bottom: -140px;
         text-align: left;
         background-image: url('../images/hero.png');
-        background-position: ~"calc(50% + 325px) 0";
+        background-position: ~"calc(50% + 345px) 0";
         background-repeat: no-repeat;
         width: 100%;
 
@@ -82,6 +82,8 @@ header {
     }
 
     @media(min-width:@screen-md) {
+        background-position: ~"calc(50% + 325px) 0";
+
         h1 {
             font-size: 35px;
         }
