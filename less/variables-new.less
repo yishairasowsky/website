@@ -7,7 +7,7 @@
 @brand-success: #00a65a;
 @brand-info: #555555;
 @brand-warning: #f39c12;
-@brand-primary-accent: #286090;
+@brand-primary-accent: darken(@brand-primary, 15%);
 @brand-secondary: #2c3e50;
 @brand-dark-accent: #222d32;
 
@@ -33,7 +33,7 @@
 
 // Inverted navbar links
 @navbar-inverse-link-color: #fff;
-@navbar-inverse-link-hover-color: #fff;
+@navbar-inverse-link-hover-color: lighten(@brand-primary, 35%);
 @navbar-inverse-link-hover-bg: transparent;
 @navbar-inverse-link-active-color: #fff;
 @navbar-inverse-link-active-bg: @brand-primary;
@@ -46,9 +46,9 @@
 @navbar-inverse-brand-hover-bg: transparent;
 
 // Inverted navbar toggle
-@navbar-inverse-toggle-hover-bg: #333;
+@navbar-inverse-toggle-hover-bg: @brand-primary-accent;
 @navbar-inverse-toggle-icon-bar-bg: #fff;
-@navbar-inverse-toggle-border-color: #333;
+@navbar-inverse-toggle-border-color: darken(@brand-primary, 5%);
 
 //== Container sizes
 // Large screen / wide desktop
