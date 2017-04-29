@@ -10,7 +10,13 @@ html {
 }
 
 body {
-    margin-bottom: 150px;
+    margin-bottom: 650px;
+}
+
+@media(min-width:@screen-sm) {
+    body {
+        margin-bottom: 300px;
+    }
 }
 
 .btn {
@@ -129,6 +135,11 @@ section {
         background-color: #ecf0f5;
     }
 
+    &.tiled {
+        background-image: url('../images/white_tiles_v2.png');
+        .box-shadow(0px -3px 14px rgba(50, 50, 50, 0.25))
+    }
+
     h2 {
         font-size: 23px;
         text-align: center;
@@ -187,14 +198,58 @@ section {
 
 footer {
     background-color: @brand-dark-accent;
-    height: 150px;
+    height: 650px;
     margin: 0;
-    color: #fff;
+    color: #b8c7ce;
     position: absolute;
     width: 100%;
     bottom: 0;
-}
+    font-size: 16px;
+    padding: 40px 0;
 
+    h4 {
+        color: #fff;
+    }
+
+    a {
+        color: #8aa4af;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    ul {
+        li {
+            padding-bottom: 10px;
+        }
+    }
+
+    .social {
+        margin-top: 40px;
+
+        i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media(min-width:@screen-md) {
+        .social {
+            i {
+                font-size: 55px;
+            }
+        }
+    }
+
+    @media(min-width:@screen-sm) {
+        height: 300px;
+
+        .social {
+            margin-top: 0;
+        }
+    }
+}
 // Lists
 .list-browsers {
     li {
@@ -422,7 +477,6 @@ footer {
 .panel-secondary {
     .panel-variant(@brand-secondary; #ffffff; @brand-secondary; @brand-secondary);
 }
-
 // Plan
 .plans {
     .panel-heading {

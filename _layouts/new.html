@@ -57,7 +57,42 @@
 
     {{content}}
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#organizations">Business</a></li>
+                        <li><a href="/#download">Download</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4 class="hidden-xs">&nbsp;</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://blog.bitwarden.com">Blog</a></li>
+                        <li><a href="https://help.bitwarden.com">Help/Support</a></li>
+                        <li><a href="https://github.com/bitwarden" target="_blank">Source Code</a></li>
+                        <li><a href="https://vault.bitwarden.com/#/register">Create an Account</a></li>
+                        <li><a href="https://vault.bitwarden.com/#/">Log In to Web Vault</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 social">
+                    <h4>Follow Us</h4>
+                    <ul class="list-inline">
+                        <li><a href="https://twitter.com/bitwarden_app"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/bitwarden/"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="https://plus.google.com/114869903467947368993"><i class="fa fa-google-plus-official"></i></a></li>
+                        <li><a href="https://github.com/bitwarden"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                    &copy; 2015 - {{ 'now' | date: "%Y" }}, <br class="visible-sm" />8bit Solutions LLC
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>(window.jQuery || document.write('<script src="lib\/jquery\/jquery.min.js?v={{"now" | date: "%s"}}"><\/script>'));</script>
