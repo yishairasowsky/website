@@ -32,6 +32,14 @@ body {
     .button-variant(#ffffff; @brand-secondary; @brand-secondary);
 }
 
+.btn-green {
+    .button-variant(#ffffff; #10bb6d; #10bb6d);
+
+    &:hover, &:focus, &:active {
+        background-color: darken(#10bb6d, 3%)
+    }
+}
+
 .btn-xl {
     .button-size(20px; 25px; @font-size-large; @line-height-large; 5px);
 }
