@@ -32,20 +32,24 @@ body {
     .button-variant(#ffffff; @brand-secondary; @brand-secondary);
 }
 
-.btn-green {
-    .button-variant(#ffffff; #10bb6d; #10bb6d);
-
-    &:hover, &:focus, &:active {
-        background-color: darken(#10bb6d, 3%)
-    }
-}
-
 .btn-xl {
     .button-size(20px; 25px; @font-size-large; @line-height-large; 5px);
 }
 
 .navbar-brand {
-    font-weight: 300;
+    @media(min-width:@screen-sm) {
+        .fa {
+            font-size: 1.33333333em;
+            line-height: 0.75em;
+            vertical-align: -15%;
+        }
+    }
+
+    @media(max-width:@screen-xs-max) {
+        font-size: 30px;
+        padding-top: 25px;
+        font-weight: 300;
+    }
 }
 
 .navbar-nav {
@@ -56,7 +60,7 @@ body {
 
 @media(max-width:@screen-xs-max) {
     .navbar-collapse {
-        background-color: darken(@brand-primary, 5%);
+        background-color: @brand-primary-accent;
         border: 0;
         .box-shadow(e("inset 0 10px 10px -10px rgba(0,0,0,.35), inset 0 -10px 10px -10px rgba(0,0,0,.35);"));
 
@@ -67,6 +71,7 @@ body {
 }
 
 header {
+    padding-top: 10px;
     margin-bottom: -145px;
     color: #fff;
     position: relative;
