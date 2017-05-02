@@ -1,165 +1,450 @@
 ---
 layout: default
-title: The Best Free Password Manager
+title: Open Source Free Password Manager
 ---
-
 
 <header>
     <div class="container">
-        <img src="/images/devices.png" alt="The bitwarden Vault" usemap="#image-map" class="img-responsive"
-             width="1130" height="485" />
-        <map name="image-map" id="image-map">
-            <area alt="bitwarden iOS Vault" title="bitwarden iOS Vault"
-                  href="https://itunes.apple.com/us/app/bitwarden-free-password-manager/id1137397744?mt=8"
-                  shape="rect" coords="616,34,915,443" style="outline:none;" target="_blank" />
-            <area alt="bitwarden Android Vault" title="bitwarden Android Vault"
-                  href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden"
-                  shape="rect" coords="925,125,1095,448" style="outline:none;" target="_blank" />
-            <area alt="bitwarden Browser Extension Vault" title="bitwarden Browser Extension Vault"
-                  href="https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb"
-                  shape="rect" coords="458,37,560,209" style="outline:none;" target="_blank" />
-            <area alt="bitwarden Web Vault" title="bitwarden Web Vault" href="https://vault.bitwarden.com/"
-                  shape="rect" coords="128,38,454,339" style="outline:none;" target="_blank" />
-        </map>
-        <div class="intro-text">
-            bitwarden is the easiest and safest way to store and sync your passwords across all of your devices.
-            <u>100% FREE</u>. No gimmicks. Download bitwarden today!
-        </div>
-        <div class="downloads">
-            <div class="browsers">
-                <a href="https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/" target="_blank" onclick="gaEvent('Header Firefox')" title="Get bitwarden for Firefox"><img width="57" height="54" alt="Firefox Extension" src="/images/firefox.png"></a><a href="https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb" onclick="gaEvent('Header Chrome')" title="Get bitwarden for Chrome" target="_blank"><img width="53" height="54" alt="Chrome Extension" src="/images/chrome.png"></a><a href="https://addons.opera.com/extensions/details/bitwarden-free-password-manager/" onclick="gaEvent('Header Opera')" title="Get bitwarden for Opera" target="_blank"><img width="53" height="54" alt="Opera Extension" src="/images/opera.png"></a><a href="javascript:void(0)" onclick="gaEvent('Header Edge')" title="Get bitwarden for Edge" data-toggle="popover" data-trigger="hover" data-content="Unfortunately Microsoft has not yet made extensions for Edge publicly available. As soon as they do, bitwarden will immediately be made available for Edge."><img width="52" height="54" alt="Edge Extension" src="/images/edge.png"></a>
-            </div>
-            <div class="mobile">
-                <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden" onclick="gaEvent('Header Android')" title="Get bitwarden on Google Play" target="_blank"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="63" width="163" alt="Get bitwarden on Google Play"></a><a href="https://itunes.apple.com/us/app/bitwarden-free-password-manager/id1137397744?mt=8" onclick="gaEvent('Header iOS')" target="_blank" title="Get bitwarden for iOS"><img src="https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg" width="165" height="40" alt="Get bitwarden for iOS" style="margin-right: -5px;"></a>
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Open source password management solutions</h1>
+                <p class="summary">bitwarden is the easiest and safest way to store and sync logins across all of your devices.</p>
+                <a href="#download" class="btn btn-secondary btn-xl">
+                    <i class="fa fa-download"></i> Install Now - <span class="hidden-xxs">It's</span> FREE
+                </a>
             </div>
         </div>
     </div>
 </header>
-
-<section class="primary" id="why">
+<section>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-2">
-                <h2><i class="fa fa-shield"></i> Why?</h2>
-                <hr class="shield-light">
-            </div>
+        <div class="feature-box" style="padding-bottom: 0;">
+            <h3>Your online safety is at risk</h3>
+            <p>
+                Password theft is a serious problem. The websites and apps that you use are under attack every day.
+                Security breaches occur and your passwords are stolen. When you reuse the same passwords everywhere hackers
+                can easily access your email, bank, and other important accounts.
+            </p>
         </div>
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-2 col-sm-9">
-                <p>
-                    Password theft is a serious problem. The websites and apps that you use are under attack every day.
-                    Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and
-                    websites hackers can easily access your email, bank, and other important accounts.
-                </p>
-                <p>
-                    Security experts recommend that you use a different, randomly generated password for every account that you
-                    create. But how do you manage all those passwords? bitwarden makes it easy for you to create, store, and access
-                    your passwords.
-                </p>
-            </div>
-            <div class="col-lg-2 text-center hidden-xs col-sm-3">
-                <i class="fa fa-question-circle" style="font-size: 170px;"></i>
-            </div>
+        <div class="feature-box">
+            <h3>How do you stay safe?</h3>
+            <p>
+                Security experts recommend that you use a different, randomly generated password for every online account
+                that you create. But how are you suppose to remember and keep up with that many passwords? bitwarden
+                helps you create and manage secure passwords so that you can get back to enjoying your life online.
+            </p>
+        </div>
+        <div class="text-center">
+            <p>
+                <a class="btn btn-primary btn-xl" href="https://vault.bitwarden.com/#/register">
+                    <i class="fa fa-pencil-square-o hidden-xxs"></i>
+                    Create a FREE Account
+                </a>
+            </p>
+            <small class="text-muted">it's really free, not a fake "free trial free"</small>
         </div>
     </div>
 </section>
-
-<section id="protected">
+<section class="alt">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-2">
-                <h2><i class="fa fa-shield"></i> Protected</h2>
-                <hr class="shield-primary">
-            </div>
+        <div class="text-center">
+            <div class="connected"></div>
+            <h2>Sync all of your devices</h2>
+            <p><i>A password manager is useless if you can't easily access it.</i></p>
         </div>
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-2 col-sm-9">
-                <p>
-                    bitwarden stores all of your passwords in an encrypted vault. Since it's fully encrypted before it ever leaves
-                    your device, <u>only you</u> have access to your data. Not even the team at bitwarden can read your data, even
-                    if we wanted to.
-                </p>
-                <p>
-                    Your data is sealed with <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank" onclick="gaEvent('AES-256')">AES-256</a>
-                    bit encryption, salted hashing, and <a href="https://en.wikipedia.org/wiki/PBKDF2" target="_blank" onclick="gaEvent('PBKDF2')">PBKDF2</a> SHA-256.
-                </p>
-            </div>
-            <div class="col-lg-2 text-center hidden-xs col-sm-3">
-                <i class="fa fa-lock" style="font-size: 200px;"></i>
-            </div>
+        <div class="feature-box">
+            <p>
+                Our secure cloud syncing features allow you to access your data from anywhere, on any device!
+                Your vault is conveniently optimized for use on desktop, laptop, tablet, and phone devices.
+            </p>
+            <p>
+                Since all of your data is fully encrypted before it ever leaves your device, <u>only you</u> have access to it.
+                Not even the team at bitwarden can read your data, even if we wanted to. Your data is sealed with
+                <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank">AES encryption</a>,
+                salted hashing, and <a href="https://en.wikipedia.org/wiki/PBKDF2" target="_blank">PBKDF2</a>.
+            </p>
+            <p>
+                <a href="https://help.bitwarden.com/security/" target="_blank">
+                    <i class="fa fa-long-arrow-right fa-fw"></i>Learn more about bitwarden security
+                </a>
+            </p>
         </div>
-    </div>
-</section>
-
-<section class="primary" id="accessible">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-2">
-                <h2><i class="fa fa-shield"></i> Accessible</h2>
-                <hr class="shield-light">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-2 col-sm-9">
-                <p>Because your data is hosted in our secure cloud environment, you can access it from anywhere, on any device!<p>
-                <p>Your vault is conveniently optimized for use on desktop, laptop, tablet, and phone devices.</p>
-            </div>
-            <div class="col-lg-2 text-right text-center hidden-xs col-sm-3">
-                <i class="fa fa-cloud-download" style="font-size: 150px;"></i>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="open-source">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-2">
-                <h2><i class="fa fa-shield"></i> Open Source</h2>
-                <hr class="shield-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-2 col-sm-9">
-                <p>
-                    We believe it's important to be transparent and open about how we handle and store your sensitive data.
-                    That's why bitwarden is 100% open source software.
-                </p>
-                <p>
-                    Check us out on <a href="https://github.com/bitwarden" onclick="gaEvent('OSS GitHub')" target="_blank">GitHub</a>.
-                    Contributions, code reviews, and other feedback are welcome.
-                </p>
-            </div>
-            <div class="col-lg-2 text-right text-center hidden-xs col-sm-3">
-                <i class="fa fa-github" style="font-size: 140px;"></i>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <div class="action-buttons">
-                <h2>Let's Get Started</h2>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <a href="https://vault.bitwarden.com/#register" onclick="gaEvent('Get Started Register')"
-                           class="btn btn-secondary btn-xl btn-block">Create Account</a>
-                    </div>
-                    <div class="col-sm-6">
-                        <a href="https://vault.bitwarden.com/#login" onclick="gaEvent('Get Started Login')"
-                           class="btn btn-secondary btn-xl btn-block">Log In</a>
-                    </div>
+        <div class="feature-box" id="download">
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <h3>Desktop</h3>
+                    <p>
+                        Access bitwarden on Windows, macOS, and Linux desktops through our array of browser extensions.
+                    </p>
+                    <p class="small text-muted">
+                        * native desktop applications coming soon
+                    </p>
                 </div>
-                <div class="row downloads">
-                    <div class="col-sm-6 browsers">
-                        <a href="https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/" target="_blank" onclick="gaEvent('Get Started Firefox')" title="Get bitwarden for Firefox"><img width="57" height="54" alt="Firefox Extension" src="/images/firefox.png"></a><a href="https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb" onclick="gaEvent('Get Started Chrome')" title="Get bitwarden for Chrome" target="_blank"><img width="53" height="54" alt="Chrome Extension" src="/images/chrome.png"></a><a href="https://addons.opera.com/extensions/details/bitwarden-free-password-manager/" onclick="gaEvent('Get Started Opera')" title="Get bitwarden for Opera" target="_blank"><img width="53" height="54" alt="Opera Extension" src="/images/opera.png"></a><a href="javascript:void(0)" onclick="gaEvent('Get Started Edge')" title="Get bitwarden for Edge" data-toggle="popover" data-trigger="hover" data-content="Unfortunately Microsoft has not yet made extensions for Edge publicly available. As soon as they do, bitwarden will immediately be made available for Edge."><img width="52" height="54" alt="Edge Extension" src="/images/edge.png"></a>
-                    </div>
-                    <div class="col-sm-6 mobile">
-                        <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden" onclick="gaEvent('Get Started Android')" title="Get bitwarden on Google Play" target="_blank"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="63" width="163" alt="Get bitwarden on Google Play"></a><a href="https://itunes.apple.com/us/app/bitwarden-free-password-manager/id1137397744?mt=8" onclick="gaEvent('Get Started iOS')" target="_blank" title="Get bitwarden for iOS"><img src="https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg" width="165" height="40" alt="Get bitwarden for iOS" style="margin-right: -5px;"></a>
+                <div class="col-md-7 col-sm-6 list-browsers">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb"
+                                       target="_blank" class="chrome">Google Chrome</a>
+                                </li>
+                                <li>
+                                    <a href="https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/"
+                                       target="_blank" class="firefox">Mozilla Firefox</a>
+                                </li>
+                                <li>
+                                    <a href="https://addons.opera.com/extensions/details/bitwarden-free-password-manager/"
+                                       target="_blank" class="opera">Opera</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="edge">
+                                        <span class="visible-xs-inline">Microsoft</span> Edge <small> - coming soon</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><a href="https://brave.com/" target="_blank" class="brave">Brave</a></li>
+                                <li>
+                                    <a href="https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb"
+                                       target="_blank" class="vivaldi">Vivaldi</a>
+                                </li>
+                                <li>
+                                    <a href="https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/"
+                                       target="_blank" class="tor">Tor Browser</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="feature-box">
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <h3>Mobile</h3>
+                    <p>Take bitwarden on the go with our mobile apps for your phone or tablet device.</p>
+                    <p class="small text-muted">
+                        * windows UWP coming soon
+                    </p>
+                </div>
+                <div class="col-md-7 col-sm-6 list-store">
+                    <a href="https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8"
+                       target="_blank" class="apple" title="Apple App Store"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden" target="_blank"
+                       class="google" title="Google Play Store"></a>
+                    <a href="https://www.amazon.com/dp/B06XMYGPMV" target="_blank" class="amazon" title="Amazon Store"></a>
+                </div>
+            </div>
+        </div>
+        <div class="feature-box">
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <h3>Web</h3>
+                    <p>
+                        Stuck without any of your devices? Using a friend's computer? You can access your
+                        bitwarden vault from any web enabled device by using our web vault.
+                    </p>
+                </div>
+                <div class="col-md-7 col-sm-6">
+                    <p>
+                        <a class="btn btn-default btn-xl" href="https://vault.bitwarden.com/#/">
+                            <i class="fa fa-globe"></i>
+                            Access Web Vault
+                        </a>
+                    </p>
+                    <a href="https://vault.bitwarden.com/#/" class="text-muted small">
+                        <i class="fa fa-long-arrow-right fa-fw"></i>vault.bitwarden.com
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+<section class="code">
+    <div class="container">
+        <div class="text-center">
+            <div class="osi"></div>
+            <h2>Open Source Software</h2>
+            <p><i>It's a requirement.</i></p>
+        </div>
+        <div class="feature-box">
+            <p>
+                bitwarden is 100% open source software. The source code for bitwarden is hosted on GitHub and all are free to
+                review, audit, and contribute.
+            </p>
+            <p>
+                We believe that being open source is one of the most important features of
+                bitwarden. Source code transparency is an absolute requirement for software solutions like bitwarden.
+            </p>
+            <p>
+                <a href="https://github.com/bitwarden" target="_blank">
+                    <i class="fa fa-long-arrow-right fa-fw"></i>Check out bitwarden on GitHub
+                </a>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 text-center">
+                <div class="feature-box">
+                    <i class="fa fa-github fa-4x" style="font-size: 200px"></i>
+                </div>
+            </div>
+            <div class="col-sm-7 list-repos">
+                <div class="feature-box force">
+                    <h3>Code Repositories</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://github.com/bitwarden/core" target="_blank">
+                                        <i class="fa fa-database"></i> Core
+                                        <small>github.com/bitwarden/core</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/bitwarden/web" target="_blank">
+                                        <i class="fa fa-globe"></i> Web
+                                        <small>github.com/bitwarden/web</small>
+                                    </a>
+                                </li>
+                                <li class="text-muted">
+                                    <a href="https://github.com/bitwarden/desktop" target="_blank">
+                                        <i class="fa fa-desktop"></i> Desktop <span class="small"> - coming soon</span>
+                                        <small>github.com/bitwarden/desktop</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://github.com/bitwarden/browser" target="_blank">
+                                        <i class="fa fa-chrome"></i> Browser
+                                        <small>github.com/bitwarden/browser</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/bitwarden/mobile" target="_blank">
+                                        <i class="fa fa-tablet"></i> Mobile
+                                        <small>github.com/bitwarden/mobile</small>
+                                    </a>
+                                </li>
+                                <li class="text-muted">
+                                    <a href="https://github.com/bitwarden/cli" target="_blank">
+                                        <i class="fa fa-terminal"></i> CLI <span class="small"> - coming soon</span>
+                                        <small>github.com/bitwarden/cli</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 text-center">
+                <div class="feature-box">
+                    <div class="gitter-hello-world"></div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="feature-box">
+                    <h3>Developer Chat</h3>
+                    <p>Join us in our Gitter chat channel to talk with the bitwarden developers.</p>
+                    <p>
+                        <a class="btn btn-default btn-xl" href="https://gitter.im/bitwarden/Lobby" target="_blank">
+                            <i class="fa fa-comments"></i>
+                            Join Developer Chat
+                        </a>
+                    </p>
+                    <a href="https://gitter.im/bitwarden/Lobby" target="_blank" class="text-muted small">
+                        <i class="fa fa-long-arrow-right fa-fw"></i>gitter.im/bitwarden/Lobby
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="alt tiled">
+    <div class="container">
+        <div class="subsection">
+            <div class="text-center">
+                <div class="vault"></div>
+                <h2>Personal Accounts</h2>
+                <p><i>Create a personal vault to securely manage all of your online credentials.</i></p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="feature-box">
+                        <h3>FREE</h3>
+                        <p>We believe that security is important for everyone. The core features of bitwarden are 100% free.</p>
+                        <ul class="fa-ul checklist">
+                            <li><i class="fa fa-li fa-check"></i> Install all bitwarden apps</li>
+                            <li><i class="fa fa-li fa-check"></i> Sync all of your devices, no limits!</li>
+                            <li><i class="fa fa-li fa-check"></i> Store unlimited items in your vault</li>
+                            <li><i class="fa fa-li fa-check"></i> Two-step authentication (2FA)</li>
+                            <li><i class="fa fa-li fa-check"></i> Password generator</li>
+                            <li><i class="fa fa-li fa-check"></i> Auto-fill login credentials</li>
+                            <li><i class="fa fa-li fa-check"></i> Secure notes - cards, licenses, etc. <small class="text-muted">(coming soon)</small></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="feature-box force">
+                        <h3>Premium <small>(coming soon)</small></h3>
+                        <p>Upgrade your personal account to unlock some great additional premium features.</p>
+                        <ul class="fa-ul checklist">
+                            <li><i class="fa fa-li fa-check"></i> Everything from a free account, plus:</li>
+                            <li><i class="fa fa-li fa-check"></i> Priority tech support</li>
+                            <li><i class="fa fa-li fa-check"></i> YubiKey two-step authentication</li>
+                            <li><i class="fa fa-li fa-check"></i> 1GB of encrypted file storage attachments</li>
+                            <li><i class="fa fa-li fa-check"></i> Manage TOTP codes from your vault</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>Let's get started...</p>
+                <p>
+                    <a class="btn btn-default btn-xl" href="https://vault.bitwarden.com/#/register">
+                        <i class="fa fa-pencil-square-o hidden-xxs"></i>
+                        Create a FREE Account
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="subsection" id="organizations">
+            <div class="text-center">
+                <div class="user-group"></div>
+                <h2>Organization Accounts</h2>
+                <p><i>Powerful sharing features for personal users and business organizations.</i></p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="feature-box plans">
+                        <h3 class="text-center">Personal Use</h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        FREE
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="prices">
+                                            <span class="price">FREE</span>
+                                            <span class="interval">forever</span>
+                                            <div class="additional">share with a spouse or friend<br />upgradable at any time</div>
+                                        </div>
+                                        <ul class="fa-ul checklist">
+                                            <li><i class="fa fa-li fa-check"></i> Sharing for 2 users</li>
+                                            <li><i class="fa fa-li fa-check"></i> Limit 2 collections</li>
+                                            <li><i class="fa fa-li fa-check"></i> Unlimited shared items</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <a href="https://vault.bitwarden.com/#/register/?org=free"
+                                           class="btn btn-block btn-primary">
+                                            Create Account
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        Personal
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="prices">
+                                            <span class="price">$1</span>
+                                            <span class="interval">/month</span>
+                                            <div class="additional">includes 5 users<br />additional: $1 per user /mo.</div>
+                                        </div>
+                                        <ul class="fa-ul checklist">
+                                            <li><i class="fa fa-li fa-check"></i> Share with 2-10 users</li>
+                                            <li><i class="fa fa-li fa-check"></i> Unlimited collections</li>
+                                            <li><i class="fa fa-li fa-check"></i> Unlimited shared items</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <a href="https://vault.bitwarden.com/#/register/?org=personal"
+                                           class="btn btn-block btn-primary">
+                                            Start Free Trial
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-box plans force">
+                        <h3 class="text-center">Business Use</h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="panel panel-secondary">
+                                    <div class="panel-heading">
+                                        Teams
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="prices">
+                                            <span class="price">$5</span>
+                                            <span class="interval">/month</span>
+                                            <div class="additional">includes 5 users<br />additional: $2 per user /mo.</div>
+                                        </div>
+                                        <ul class="fa-ul checklist">
+                                            <li><i class="fa fa-li fa-check"></i> Unlimited users</li>
+                                            <li><i class="fa fa-li fa-check"></i> Unlimited collections</li>
+                                            <li><i class="fa fa-li fa-check"></i> Unlimited shared items</li>
+                                            <li><i class="fa fa-li fa-check"></i> Priority tech support</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <a href="https://vault.bitwarden.com/#/register/?org=teams"
+                                           class="btn btn-block btn-secondary">
+                                            Start Free Trial
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="panel panel-secondary">
+                                    <div class="panel-heading">
+                                        Enterprise
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="prices">
+                                            <span class="price">$3</span>
+                                            <span class="interval">per user /month</span>
+                                        </div>
+                                        <p>All teams features, plus:</p>
+                                        <ul class="fa-ul checklist">
+                                            <li><i class="fa fa-li fa-check"></i> On-premise hosting</li>
+                                            <li><i class="fa fa-li fa-check"></i> User groups</li>
+                                            <li><i class="fa fa-li fa-check"></i> Active directory sync</li>
+                                            <li><i class="fa fa-li fa-check"></i> Audit logging</li>
+                                            <li><i class="fa fa-li fa-check"></i> Security policies</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <a href="#" class="btn btn-block btn-secondary disabled">
+                                            Coming Soon
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>Questions about our plans?</p>
+                <a class="btn btn-default btn-xl" href="/contact">
+                    <i class="fa fa-envelope"></i>
+                    Contact Us Today
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
