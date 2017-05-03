@@ -159,6 +159,39 @@
 
             ga('send', obj);
         }
+
+        $(function () {
+            $('#contact-form').submit(function (e) {
+                e.preventDefault();
+                var refresh = $('#contact-form').find('.fa-refresh');
+                var button = $('#contact-form').find('button');
+                refresh.show();
+                button.attr('disabled', true);
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://func.bitwarden.com/api/newhelpdeskticket',
+                    data: {
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        message: $('#message').val()
+                    },
+                    dataType: 'html',
+                    success: function (response) {
+                        $('#email-success').show();
+                        $('#name').val('');
+                        $('#email').val('');
+                        $('#message').val('');
+                    },
+                    error: function (e) {
+                        $('#email-error').show();
+                    }
+                }).done(function (data) {
+                    refresh.hide();
+                    button.attr('disabled', false);
+                });
+            });
+        });
     </script>
 </body>
 </html>
