@@ -28,28 +28,37 @@
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/" onclick="gaEvent('Nav Logo')">
                     <i class="fa fa-shield"></i>
                     <span class="visible-xs-inline"><strong>bit</strong>warden</span>
                 </a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav">
-                    <li><a href="#organizations">Business</a></li>
-                    <li><a href="#download">Download</a></li>
-                    <li><a href="https://help.bitwarden.com">Help/FAQs</a></li>
+                    <li><a href="#organizations" onclick="gaEvent('Nav Org')">Business</a></li>
+                    <li><a href="#download" onclick="gaEvent('Nav Download')">Download</a></li>
+                    <li><a href="https://help.bitwarden.com" onclick="gaEvent('Nav Help')">Help/FAQs</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://vault.bitwarden.com/#/register" class="hidden-sm"><b>Create Account</b></a></li>
-                    <li><a href="https://vault.bitwarden.com/#/register" class="visible-sm"><b>Register</b></a></li>
-                    <li><a href="https://vault.bitwarden.com/#/">Log In <i class="fa fa-sign-in"></i></a></li>
+                    <li>
+                        <a href="https://vault.bitwarden.com/#/register" class="hidden-sm"
+                           onclick="gaEvent('Nav Create Account')"><b>Create Account</b></a>
+                    </li>
+                    <li>
+                        <a href="https://vault.bitwarden.com/#/register" class="visible-sm"
+                           onclick="gaEvent('Nav Register')"><b>Register</b></a>
+                    </li>
+                    <li>
+                        <a href="https://vault.bitwarden.com/#/"
+                           onclick="gaEvent('Nav Log In')">Log In<i class="fa fa-sign-in"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -64,18 +73,22 @@
                     <h4>Links</h4>
                     <ul class="list-unstyled">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/#download">Download</a></li>
-                        <li><a href="/#organizations">Business</a></li>
+                        <li><a href="/#download" onclick="gaEvent('Footer Download')">Download</a></li>
+                        <li><a href="/#organizations" onclick="gaEvent('Footer Business')">Business</a></li>
                         <li><a href="/contact">Contact Us</a></li>
-                        <li><a href="https://vault.bitwarden.com/#/">Web Vault</a></li>
+                        <li><a href="https://vault.bitwarden.com/#/" onclick="gaEvent('Footer Web Vault')">Web Vault</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-xs-6">
                     <h4 class="invisible">&nbsp;</h4>
                     <ul class="list-unstyled">
-                        <li><a href="https://blog.bitwarden.com">Blog</a></li>
-                        <li><a href="https://help.bitwarden.com">Help/Support</a></li>
-                        <li><a href="https://github.com/bitwarden" target="_blank">Source Code</a></li>
+                        <li><a href="https://blog.bitwarden.com" onclick="gaEvent('Footer Blog')">Blog</a></li>
+                        <li><a href="https://help.bitwarden.com" onclick="gaEvent('Footer Help')">Help/Support</a></li>
+                        <li>
+                            <a href="https://github.com/bitwarden" target="_blank" onclick="gaEvent('Footer Source Code')">
+                                Source Code
+                            </a>
+                        </li>
                         <li><a href="/privacy">Privacy Policy</a></li>
                         <li><a href="/credits">Credits</a></li>
                     </ul>
@@ -84,22 +97,23 @@
                     <h4>Follow Us</h4>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://twitter.com/bitwarden_app" title="Twitter">
+                            <a href="https://twitter.com/bitwarden_app" title="Twitter" onclick="gaEvent('Follow Twitter')">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/bitwarden/" title="Facebook">
+                            <a href="https://www.facebook.com/bitwarden/" title="Facebook" onclick="gaEvent('Follow Facebook')">
                                 <i class="fa fa-facebook-square"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/114869903467947368993" title="Google+">
+                            <a href="https://plus.google.com/114869903467947368993" title="Google+"
+                               onclick="gaEvent('Follow Google+')">
                                 <i class="fa fa-google-plus-square"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/bitwarden" title="GitHub">
+                            <a href="https://github.com/bitwarden" title="GitHub" onclick="gaEvent('Follow GitHub')">
                                 <i class="fa fa-github"></i>
                             </a>
                         </li>
