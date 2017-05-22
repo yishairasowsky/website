@@ -557,14 +557,18 @@ footer {
 
     @media(min-width:@screen-sm) {
         .panel-body {
-            min-height: 230px;
+            min-height: 240px;
         }
     }
 }
 
 ul.checklist {
-    .fa {
+    .fa-check {
         color: @brand-success;
+
+        &.muted {
+            color: @text-muted;
+        }
     }
 }
 
