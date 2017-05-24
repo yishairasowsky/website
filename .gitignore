@@ -4,8 +4,6 @@ dist/
 _site/
 css/
 .sass-cache/
-.publish
-.publish/
 .vscode/
 js/bit.min.js
 .vs/
