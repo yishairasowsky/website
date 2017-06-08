@@ -329,14 +329,17 @@ title: Free Open Source Password Manager
                             <li><i class="fa fa-li fa-check"></i> Priority tech support</li>
                             <li>
                                 <i class="fa fa-li fa-check"></i> 2FA options for
-                                <a href="https://www.yubico.com/" target="_blank" rel="noopener">YubiKey</a>,
-                                <a href="https://duo.com/" target="_blank" rel="noopener">Duo</a>, &amp; email
+                                <a href="https://www.yubico.com/" onclick="gaEvent('YubiKey')" target="_blank"
+                                   rel="noopener">YubiKey</a>,
+                                <a href="https://duo.com/" target="_blank" rel="noopener" onclick="gaEvent('Duo')">Duo</a>,
+                                &amp; email
                             </li>
                             <li><i class="fa fa-li fa-check"></i> Encrypted file attachments</li>
                             <li>
                                 <i class="fa fa-li fa-check"></i>
-                                <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm" target="_blank"
-                                   rel="noopener">TOTP code</a> storage &amp; generation
+                                <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm"
+                                   onclick="gaEvent('TOTP')" target="_blank" rel="noopener">TOTP code</a>
+                                storage &amp; generation
                             </li>
                         </ul>
                     </div>
