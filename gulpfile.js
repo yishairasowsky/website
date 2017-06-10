@@ -7,7 +7,10 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     ghPages = require('gulp-gh-pages'),
     runSequence = require('run-sequence'),
-    merge = require('merge-stream');
+    merge = require('merge-stream'),
+    gulpUtil = require('gulp-util'),
+    child = require('child_process'),
+    browserSync = require('browser-sync').create();
 
 var paths = {};
 paths.dist = './_site/';
@@ -113,4 +116,43 @@ gulp.task('less', function () {
 
 gulp.task('watch', function () {
     gulp.watch(paths.lessDir + '*.less', ['lesscompile']);
+});
+
+function jekyll(commands, cb) {
+    var jekyllLogger = (buffer) => {
+        buffer.toString()
+            .split(/\n/)
+            .forEach((message) => gulpUtil.log(message));
+    };
+    var jekyllCommand = process.platform === "win32" ? "jekyll.bat" : "jekyll";
+    var jekyll = child.spawn(jekyllCommand, commands);
+    jekyll.stdout.on('data', jekyllLogger);
+    jekyll.stderr.on('data', jekyllLogger);
+    jekyll.stderr.on('close', cb);
+    return jekyll;
+}
+
+gulp.task('jekyll:build', function (cb) {
+    return jekyll(['build', '--watch'], cb);
+});
+
+gulp.task('jekyll:serve', function (cb) {
+    return jekyll(['serve', '--watch'], cb);
+});
+
+gulp.task('serve', () => {
+    return browserSync.init({
+        files: [paths.dist + '/**'],
+        port: 4009,
+        server: {
+            baseDir: paths.dist
+        }
+    });
+});
+
+gulp.task('default', function (cb) {
+    return runSequence(
+        'build',
+        'jekyll:serve',
+        cb);
 });
