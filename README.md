@@ -4,6 +4,21 @@
 
 The bitwarden Website project is written using Jekyll, which is hosted/deployed to a GitHub pages branch.
 
+# Build/Run
+
+**Requirements**
+
+- [Node.js](https://nodejs.org)
+- [Gulp](http://gulpjs.com/)
+- [Ruby](https://www.ruby-lang.org/)
+- [Jekyll](https://jekyllrb.com/)
+
+Run the following commands:
+- `npm install`
+- `gulp`
+
+You can now access the website at `http://localhost:4010`.
+
 # Contribute
 
 Code contributions are welcome! Please commit any pull requests against the `master` branch.
