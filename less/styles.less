@@ -583,6 +583,51 @@ ul.checklist {
     }
 }
 
+.personal-button {
+    text-align: center;
+}
+
+.premium-price {
+    text-align: center;
+    font-size: @font-size-large;
+}
+
+@media(min-width:@screen-sm) {
+    .personal-button {
+        text-align: left;
+        padding: 0 0 0 13px;
+    }
+
+    .premium-price {
+        text-align: left;
+        padding: 0 0 0 40px;
+    }
+
+    #personal {
+        .tier {
+            min-height: 340px;
+        }
+    }
+}
+
+@media(min-width:@screen-md) {
+    .personal-button {
+        text-align: left;
+        padding: 0 0 0 13px;
+    }
+
+    .premium-price {
+        text-align: left;
+        padding: 0 0 0 40px;
+    }
+
+    #personal {
+        .tier {
+            min-height: 300px;
+        }
+    }
+}
+
 @media(max-width:@screen-sm-max) {
     small {
         font-size: 85%;

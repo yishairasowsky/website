@@ -64,7 +64,7 @@ title: Free Open Source Password Manager
                 Since all of your data is fully encrypted before it ever leaves your device, <u>only you</u> have access to it.
                 Not even the team at bitwarden can read your data, even if we wanted to. Your data is sealed with
                 <a href="https://en.wikipedia.org/wiki/End-to-end_encryption" target="_blank" rel="noopener"
-                   onclick="gaEvent('End-to-end encryption')">end-to-end AES-256 bit encryption</a>, 
+                   onclick="gaEvent('End-to-end encryption')">end-to-end AES-256 bit encryption</a>,
                 <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener"
                    onclick="gaEvent('Salted Hashing')">salted hashing</a>, and
                 <a href="https://en.wikipedia.org/wiki/PBKDF2" target="_blank" rel="noopener"
@@ -297,7 +297,7 @@ title: Free Open Source Password Manager
 </section>
 <section class="alt tiled">
     <div class="container">
-        <div class="subsection">
+        <div class="subsection" id="personal">
             <div class="text-center">
                 <div class="vault"></div>
                 <h2>Personal Accounts</h2>
@@ -306,56 +306,71 @@ title: Free Open Source Password Manager
             <div class="row">
                 <div class="col-sm-6">
                     <div class="feature-box">
-                        <h3>FREE</h3>
-                        <p>We believe that security is important for everyone. The core features of bitwarden are 100% free.</p>
-                        <ul class="fa-ul checklist">
-                            <li><i class="fa fa-li fa-check"></i> Access &amp; install all bitwarden apps</li>
-                            <li><i class="fa fa-li fa-check"></i> Sync all of your devices, no limits!</li>
-                            <li><i class="fa fa-li fa-check"></i> Store unlimited items in your vault</li>
-                            <li><i class="fa fa-li fa-check"></i> Two-step authentication (2FA)</li>
-                            <li><i class="fa fa-li fa-check"></i> Password generator</li>
-                            <li><i class="fa fa-li fa-check"></i> Auto-fill login credentials</li>
-                            <li>
-                                <i class="fa fa-li fa-check"></i> Secure notes - cards, licenses, etc.
-                                <small class="text-muted">(coming soon)</small>
-                            </li>
-                        </ul>
+                        <div class="tier">
+                            <h3>FREE</h3>
+                            <p>We believe that security is important for everyone. The core features of bitwarden are 100% free.</p>
+                            <ul class="fa-ul checklist">
+                                <li><i class="fa fa-li fa-check"></i> Access &amp; install all bitwarden apps</li>
+                                <li><i class="fa fa-li fa-check"></i> Sync all of your devices, no limits!</li>
+                                <li><i class="fa fa-li fa-check"></i> Store unlimited items in your vault</li>
+                                <li><i class="fa fa-li fa-check"></i> Two-step authentication (2FA)</li>
+                                <li><i class="fa fa-li fa-check"></i> Password generator</li>
+                                <li><i class="fa fa-li fa-check"></i> Auto-fill login credentials</li>
+                                <li>
+                                    <i class="fa fa-li fa-check"></i> Secure notes - cards, licenses, etc.
+                                    <small class="text-muted">(coming soon)</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="personal-button">
+                            <a class="btn btn-default btn-xl" href="https://vault.bitwarden.com/#/register"
+                               onclick="gaEvent('Get Started Create Account')">
+                                <i class="fa fa-pencil-square-o hidden-xxs"></i>
+                                Create a FREE Account
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="feature-box force">
-                        <h3>Premium <small>(coming soon)</small></h3>
-                        <p>Upgrade your personal account to unlock some great additional premium features.</p>
-                        <ul class="fa-ul checklist">
-                            <li><i class="fa fa-li fa-check"></i> Everything from a free account, plus:</li>
-                            <li><i class="fa fa-li fa-check"></i> Priority tech support</li>
-                            <li>
-                                <i class="fa fa-li fa-check"></i> 2FA options for
-                                <a href="https://www.yubico.com/" onclick="gaEvent('YubiKey')" target="_blank"
-                                   rel="noopener">YubiKey</a>,
-                                <a href="https://duo.com/" target="_blank" rel="noopener" onclick="gaEvent('Duo')">Duo</a>,
-                                &amp; email
-                            </li>
-                            <li><i class="fa fa-li fa-check"></i> Encrypted file attachments</li>
-                            <li>
-                                <i class="fa fa-li fa-check"></i>
-                                <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm"
-                                   onclick="gaEvent('TOTP')" target="_blank" rel="noopener">TOTP code</a>
-                                storage &amp; generation
-                            </li>
-                        </ul>
+                        <div class="tier">
+                            <h3>Premium</h3>
+                            <p>Upgrade your personal account to premium and unlock some great additional features.</p>
+                            <ul class="fa-ul checklist">
+                                <li>
+                                    <i class="fa fa-li fa-check"></i> Everything from <span class="hidden-sm">a</span>
+                                    free <span class="hidden-sm">account</span>, plus:
+                                </li>
+                            </ul>
+                            <ul class="fa-ul checklist">
+                                <li><i class="fa fa-li fa-check"></i> 1GB encrypted file storage</li>
+                                <li>
+                                    <i class="fa fa-li fa-check"></i> 2FA with
+                                    <a href="https://www.yubico.com/" onclick="gaEvent('YubiKey')" target="_blank"
+                                       rel="noopener">YubiKey</a>,
+                                    <a href="https://www.yubico.com/solutions/fido-u2f/" onclick="gaEvent('U2F')" target="_blank"
+                                       rel="noopener">FIDO U2F</a>, and
+                                    <a href="https://duo.com/" target="_blank" rel="noopener" onclick="gaEvent('Duo')">Duo</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-li fa-check"></i>
+                                    <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm"
+                                       onclick="gaEvent('TOTP')" target="_blank" rel="noopener">TOTP</a>
+                                    key storage &amp; code generation
+                                </li>
+                                <li><i class="fa fa-li fa-check"></i> Priority customer support</li>
+                            </ul>
+                            <p class="premium-price">All for just <strong>$10 /year</strong></p>
+                        </div>
+                        <div class="personal-button">
+                            <a class="btn btn-default btn-xl" href="https://vault.bitwarden.com/#/?premium=purchase"
+                               onclick="gaEvent('Get Started Upgrade Premium')">
+                                <i class="fa fa-star hidden-xxs"></i>
+                                Upgrade to Premium
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <p>Let's get started...</p>
-                <p>
-                    <a class="btn btn-default btn-xl" href="https://vault.bitwarden.com/#/register"
-                       onclick="gaEvent('Get Started')">
-                        <i class="fa fa-pencil-square-o hidden-xxs"></i>
-                        Create a FREE Account
-                    </a>
-                </p>
             </div>
         </div>
         <div class="subsection" id="organizations">
