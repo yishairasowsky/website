@@ -532,6 +532,16 @@ footer {
 
     .panel-body {
         font-size: 14px;
+
+        ul {
+            font-size: 14px;
+            margin-left: 20px;
+            margin-bottom: 0;
+
+            + ul {
+                margin-top: 5px;
+            }
+        }
     }
 
     .prices {
@@ -550,11 +560,6 @@ footer {
             margin-top: 10px;
             font-size: 90%;
         }
-    }
-
-    ul {
-        font-size: 14px;
-        margin-left: 20px;
     }
 
     @media(min-width:@screen-sm) {
