@@ -286,30 +286,30 @@ title: Free Open Source Password Manager
                     <div>
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#linux-mac" aria-controls="linux-mac" role="tab" data-toggle="tab">
-                                    <i class="fa fa-linux"></i> Linux, <i class="fa fa-apple"></i> macOS
+                                <a href="#docker-linux" aria-controls="docker-linux" role="tab" data-toggle="tab">
+                                    <i class="fa fa-linux"></i> Linux&nbsp;&nbsp;<i class="fa fa-apple"></i> macOS
                                 </a>
                             </li>
                             <li role="presentation">
-                                <a href="#windows" aria-controls="windows" role="tab" data-toggle="tab">
+                                <a href="#docker-windows" aria-controls="docker-windows" role="tab" data-toggle="tab">
                                     <i class="fa fa-windows"></i> Win<span class="hidden-xxs">dows</span>
                                 </a>
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="linux-mac">
-                                <pre class="command-line language-bash"><code class="language-bash"><span class="command-line-prompt"><span data-prompt="$"></span><span></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span><span class="token function">curl</span> <span class="token operator">-Ls</span> <span class="token operator">-o</span> bitwarden.sh https://git.io/v5ts9 \
-    &amp;&amp; <span class="token function">sudo</span> <span class="token function">chmod</span> u+x bitwarden.sh
-./bitwarden.sh <span class="token operator">install</span>
-./bitwarden.sh <span class="token operator">start</span>
-./bitwarden.sh <span class="token operator">updatedb</span></code></pre>
+                            <div role="tabpanel" class="tab-pane active" id="docker-linux">
+                                <pre class="command-line language-bash"><code class="language-bash"><span class="command-line-prompt"><span data-prompt="$"></span><span></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span><span class="token function">curl</span> <span class="token arg">-Ls</span> <span class="token arg">-o</span> bitwarden.sh https://git.io/v5ts9 \
+  &amp;&amp; <span class="token function">sudo</span> <span class="token function">chmod</span> u+x bitwarden.sh
+./bitwarden.sh <span class="token arg">install</span>
+./bitwarden.sh <span class="token arg">start</span>
+./bitwarden.sh <span class="token arg">updatedb</span></code></pre>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="windows">
-                                <pre class="command-line language-bash" data-prompt=">" data-output="2"><code class="language-bash"><span class="command-line-prompt"><span data-prompt=">"></span><span></span><span data-prompt=">"></span><span data-prompt=">"></span><span data-prompt=">"></span></span><span class="token function">Invoke-RestMethod</span> <span class="token operator">-OutFile</span> bitwarden.ps1 `
-    <span class="token operator">-Uri</span> https://git.io/v5ts9
-.\bitwarden.sh <span class="token operator">-install</span>
-.\bitwarden.sh <span class="token operator">-start</span>
-.\bitwarden.sh <span class="token operator">-updatedb</span></code></pre>
+                            <div role="tabpanel" class="tab-pane" id="docker-windows">
+                                <pre class="command-line language-ps"><code class="language-ps"><span class="command-line-prompt"><span data-prompt=">"></span><span></span><span data-prompt=">"></span><span data-prompt=">"></span><span data-prompt=">"></span></span><span class="token function">Invoke-RestMethod</span> <span class="token arg">-OutFile</span> bitwarden.ps1 `
+  <span class="token arg">-Uri</span> https://git.io/v5ts9
+.\bitwarden.sh <span class="token arg">-install</span>
+.\bitwarden.sh <span class="token arg">-start</span>
+.\bitwarden.sh <span class="token arg">-updatedb</span></code></pre>
                             </div>
                         </div>
                     </div>
