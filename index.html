@@ -272,6 +272,57 @@ title: Free Open Source Password Manager
         <div class="row">
             <div class="col-sm-5 text-center">
                 <div class="feature-box">
+                    <div class="docker"></div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="feature-box force">
+                    <h3>Host It Yourself</h3>
+                    <p>
+                        Don't want to use the bitwarden cloud? You don't have to. Using
+                        <a href="https://www.docker.com" target="_blank" rel="noopener" onclick="gaEvent('Docker')">Docker</a>
+                        you can easily host bitwarden's entire infrastructure stack on the platform of your choice.
+                    </p>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#linux-mac" aria-controls="linux-mac" role="tab" data-toggle="tab">
+                                    <i class="fa fa-linux"></i> Linux, <i class="fa fa-apple"></i> macOS
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#windows" aria-controls="windows" role="tab" data-toggle="tab">
+                                    <i class="fa fa-windows"></i> Win<span class="hidden-xxs">dows</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="linux-mac">
+                                <pre class="command-line language-bash"><code class="language-bash"><span class="command-line-prompt"><span data-prompt="$"></span><span></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span><span class="token function">curl</span> <span class="token operator">-Ls</span> <span class="token operator">-o</span> bitwarden.sh https://git.io/v5ts9 \
+    &amp;&amp; <span class="token function">sudo</span> <span class="token function">chmod</span> u+x bitwarden.sh
+./bitwarden.sh <span class="token operator">install</span>
+./bitwarden.sh <span class="token operator">start</span>
+./bitwarden.sh <span class="token operator">updatedb</span></code></pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="windows">
+                                <pre class="command-line language-bash" data-prompt=">" data-output="2"><code class="language-bash"><span class="command-line-prompt"><span data-prompt=">"></span><span></span><span data-prompt=">"></span><span data-prompt=">"></span><span data-prompt=">"></span></span><span class="token function">Invoke-RestMethod</span> <span class="token operator">-OutFile</span> bitwarden.ps1 `
+    <span class="token operator">-Uri</span> https://git.io/v5ts9
+.\bitwarden.sh <span class="token operator">-install</span>
+.\bitwarden.sh <span class="token operator">-start</span>
+.\bitwarden.sh <span class="token operator">-updatedb</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://hub.docker.com/u/bitwarden/" target="_blank" rel="noopener" class="text-muted small"
+                       onclick="gaEvent('Docker Hub')">
+                        <i class="fa fa-long-arrow-right fa-fw"></i>hub.docker.com/u/bitwarden
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 text-center">
+                <div class="feature-box">
                     <div class="gitter-hello-world"></div>
                 </div>
             </div>
