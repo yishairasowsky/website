@@ -6,10 +6,11 @@ title: Free Open Source Password Manager
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 header-content">
                 <h1>Open source password management solutions</h1>
                 <p class="summary">
-                    bitwarden is the easiest and safest way to store and sync logins across all of your devices.
+                    The easiest and safest way for individuals, teams, and business organizations to
+                    store, share, and sync sensitive data.
                 </p>
                 <a href="/#download" class="btn btn-secondary btn-xl" onclick="gaEvent('Install Now Header')">
                     <i class="fa fa-download"></i> Install Now - <span class="hidden-xxs">It's</span> FREE
@@ -69,6 +70,10 @@ title: Free Open Source Password Manager
                    onclick="gaEvent('Salted Hashing')">salted hashing</a>, and
                 <a href="https://en.wikipedia.org/wiki/PBKDF2" target="_blank" rel="noopener"
                    onclick="gaEvent('PBKDF2')">PBKDF2 SHA-256</a>.
+            </p>
+            <p>
+                Don't want to use the bitwarden cloud? You don't have to. You can also
+                <a href="#host-it-yourself">host bitwarden yourself</a> while keeping all of the same great syncing features.
             </p>
             <p>
                 <a href="https://help.bitwarden.com/security/" target="_blank" rel="noopener"
@@ -269,7 +274,7 @@ title: Free Open Source Password Manager
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="host-it-yourself">
             <div class="col-sm-5 text-center">
                 <div class="feature-box">
                     <div class="docker"></div>
