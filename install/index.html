@@ -1,0 +1,53 @@
+---
+layout: default
+title: Installation Id and Key
+---
+
+<div class="container contact inner">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Hosting Installation Id &amp; Key</h2>
+            <p>
+                Use the form below to request your private installation id and installation key for self-hosting bitwarden.
+                You should use a unique id and key for each bitwarden installation.
+            </p>
+            <div class="alert alert-success" id="installation-success" style="display: none;">
+                Installation Id: <code id="installation-id"></code><br />
+                Installation Key: <code id="installation-key"></code>
+            </div>
+            <form id="installation-form" method="post" target="">
+                <div class="alert alert-danger" id="installation-error" style="display: none;">
+                    An error occurred when trying to get your id and key. Try again.
+                </div>
+                <div class="form-group">
+                    <label for="email" class="sr-only">Admin Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Admin Email Address" required>
+                    <p class="help-block">
+                        We may use this email address to contact you about important updates regarding
+                        your bitwarden installation.
+                    </p>
+                </div>
+                <p>
+                    <button type="submit" class="btn btn-lg btn-primary">
+                        <i class="fa fa-refresh fa-spin" style="display: none;"></i>
+                        Submit
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <hr class="visible-xs visible-sm" />
+            <h2>Installation Docs</h2>
+            <p>
+                For documentation regarding how to install bitwarden to your own server,
+                including how to use this installation id and installation key, please refer to our help center.
+            </p>
+            <p>
+                <a href="https://help.bitwarden.com/article/install-on-premise/">
+                    <i class="fa fa-info-circle fa-fw"></i>
+                    Read The Docs
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
