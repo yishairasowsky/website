@@ -653,6 +653,7 @@ ul.checklist {
         margin-bottom: 40px;
     }
 }
+
 @media(min-width:@screen-sm) {
     .personal-button {
         text-align: left;
@@ -845,4 +846,14 @@ pre[class*="language-"]:after {
 
 .command-line-prompt > span[data-prompt]:before {
     content: attr(data-prompt);
+}
+
+.label {
+    padding-bottom: .2em;
+}
+
+h1, h2, h3, h4, h5 {
+    .label {
+        margin-left: 5px;
+    }
 }
