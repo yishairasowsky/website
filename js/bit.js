@@ -68,10 +68,10 @@ $(function () {
         $.ajax({
             type: 'POST',
             url: 'https://api.bitwarden.com/installations',
-            data: {
+            data: JSON.stringify({
                 email: $('#email').val()
-            },
-            contentType: 'application/json',
+            }),
+            contentType: 'application/json; charset=utf-8',
             dataType: 'json',
             success: function (response) {
                 theForm.hide();
