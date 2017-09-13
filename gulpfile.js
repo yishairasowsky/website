@@ -96,7 +96,7 @@ gulp.task('lib', ['clean:lib'], function () {
     return merge(tasks);
 });
 
-gulp.task('deploy', [], function () {
+gulp.task('deploy', ['build'], function () {
     return gulp.src(paths.dist + '**/*')
         .pipe(ghPages({ cacheDir: '../.publish_cache/web' }));
 });
