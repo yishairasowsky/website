@@ -77,8 +77,8 @@ $(function () {
                 theForm.hide();
                 $('#installation-success').show();
 
-                $('#installation-id').val(response.Id);
-                $('#installation-key').val(response.Key);
+                $('#installation-id').text(response.Id);
+                $('#installation-key').text(response.Key);
 
                 refresh.hide();
                 button.attr('disabled', false);
