@@ -131,6 +131,121 @@ title: Free Open Source Password Manager
                     </a>
                 </div>
             </div>
+            <div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="download-modal-title">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <span id="download-modal-title">
+                                <i class="fa fa-lg fa-desktop fa-fw"></i> Desktop Installation Options
+                            </span>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Bitwarden offer's a variety of different installation options for the
+                                desktop application. You can find them all listed below.
+                            </p>
+                            <p>
+                                Some options are not capable of automatic updates and are labeled as such.
+                                You should always keep Bitwarden applications up to date.
+                            </p>
+                            <h4><i class="fa fa-windows fa-lg fa-fw"></i> Windows</h4>
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Standard Installer (x86 and x64)
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=exe"
+                                           target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-Installer.exe</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Portable App for Flash Drives (x86 and x64)
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=portable"
+                                           target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-Portable.exe</a>
+                                        <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Windows Store
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=store"
+                                           target="_blank"><i class="fa fa-external-link"></i>&nbsp;https://windowsstore.com</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Chocolatey Package Manager<br />
+                                    <code>> choco install bitwarden</code>
+                                </li>
+                            </ul>
+                            <h4><i class="fa fa-apple fa-lg fa-fw"></i> macOS</h4>
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Standard Installer
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=macos&variant=dmg"
+                                           target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden.dmg</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Mac App Store
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=macos&variant=store"
+                                           target="_blank"><i class="fa fa-external-link"></i>&nbsp;https://itunes.com</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Homebrew Package Manager<br />
+                                    <code>$ brew cask install bitwarden</code>
+                                </li>
+                            </ul>
+                            <h4><i class="fa fa-linux fa-lg fa-fw"></i> Linux</h4>
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Standard Installer
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=appimage"
+                                           target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-x64.AppImage</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Ubuntu, Debian, Linux Mint, etc.
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=deb"
+                                           target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-x64.deb</a>
+                                        <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Fedora, CentOS, RHEL, openSUSE, etc.
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=rpm"
+                                           target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-x64.rpm</a>
+                                        <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Snap Package Manager<br />
+                                    <code>$ snap install bitwarden</code>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="feature-box">
             <div class="row">
@@ -234,108 +349,6 @@ title: Free Open Source Password Manager
         </div>
     </div>
 </section>
-<div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="download-modal-title">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <span id="download-modal-title">More Installation Options</span>
-            </div>
-            <div class="modal-body">
-                <p>
-                    Bitwarden offer's a variety of different installation options for the desktop application.
-                    You can find them all listed below.
-                </p>
-                <p>
-                    Some options are not capable of automatic updates and are labeled as such. You should always
-                    keep Bitwarden applications up to date.
-                </p>
-                <h4><i class="fa fa-windows fa-lg"></i> Windows</h4>
-                <ul>
-                    <li>
-                        Standard Installer (x86 and x64)
-                        <small>
-                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=exe"
-                               target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-Installer.exe</a>
-                        </small>
-                    </li>
-                    <li>
-                        Portable App for Flash Drives (x86 and x64)
-                        <small>
-                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=portable"
-                               target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-Portable.exe</a>
-                            <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
-                        </small>
-                    </li>
-                    <li>
-                        Windows Store
-                        <small>
-                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=store"
-                               target="_blank"><i class="fa fa-external-link"></i>&nbsp;https://windowsstore.com</a>
-                        </small>
-                    </li>
-                    <li>
-                        Chocolatey Package Manager<br />
-                        <code>> choco install bitwarden</code>
-                    </li>
-                </ul>
-                <h4><i class="fa fa-apple fa-lg"></i> macOS</h4>
-                <ul>
-                    <li>
-                        Standard Installer
-                        <small>
-                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=macos&variant=dmg"
-                               target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden.dmg</a>
-                        </small>
-                    </li>
-                    <li>
-                        Mac App Store
-                        <small>
-                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=macos&variant=store"
-                               target="_blank"><i class="fa fa-external-link"></i>&nbsp;https://itunes.com</a>
-                        </small>
-                    </li>
-                    <li>
-                        Homebrew Package Manager<br />
-                        <code>$ brew cask install bitwarden</code>
-                    </li>
-                </ul>
-                <h4><i class="fa fa-linux fa-lg"></i> Linux</h4>
-                <ul>
-                    <li>
-                        Standard Installer
-                        <small>
-                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=appimage"
-                               target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-x64.AppImage</a>
-                        </small>
-                    </li>
-                    <li>
-                        Ubuntu, Debian, Linux Mint, etc.
-                        <small>
-                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=deb"
-                               target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-x64.deb</a>
-                            <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
-                        </small>
-                    </li>
-                    <li>
-                        Fedora, CentOS, RHEL, openSUSE, etc.
-                        <small>
-                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=rpm"
-                               target="_blank"><i class="fa fa-download"></i>&nbsp;Bitwarden-x64.rpm</a>
-                            <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
-                        </small>
-                    </li>
-                    <li>
-                        Snap Package Manager<br />
-                        <code>$ snap install bitwarden</code>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 <section class="code">
     <div class="container">
         <div class="text-center">
