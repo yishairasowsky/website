@@ -317,7 +317,7 @@ footer {
 }
 
 // Lists
-.list-browsers {
+.list-browsers, .list-desktops {
     li {
         margin-bottom: 10px;
 
@@ -381,6 +381,44 @@ footer {
             &.tor {
                 .browser-icon('tor');
             }
+
+            &.windows {
+                .os-icon('windows');
+            }
+
+            &.macos {
+                .os-icon('macos');
+            }
+
+            &.linux {
+                .os-icon('linux');
+            }
+        }
+    }
+}
+
+.list-desktops {
+    li {
+        a {
+            padding: 20px 10px 20px 75px;
+
+            small {
+                font-size: 70%;
+                color: @text-muted;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            span {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                font-family: @font-family-monospace;
+                font-size: 80%;
+                color: @text-muted;
+            }
         }
     }
 }
@@ -405,12 +443,6 @@ footer {
             width: 204px;
             height: 61px;
             .img-retina('/images/stores/playstore.png', '/images/stores/playstore_2x.png', 204px, 61px);
-        }
-
-        &.amazon {
-            width: 176px;
-            height: 60px;
-            .img-retina('/images/stores/amazonstore.png', '/images/stores/amazonstore_2x.png', 176px, 60px);
         }
     }
 }
@@ -873,8 +905,44 @@ h1, h2, h3, h4, h5 {
 .top-buttons {
     div:first-child {
         margin-bottom: 40px;
+
         @media(min-width:@screen-sm) {
             margin-bottom: 0;
+        }
+    }
+}
+
+code {
+    border-radius: 2px;
+}
+
+.modal {
+    font-size: 16px;
+}
+
+#download-modal {
+    h4 {
+        font-weight: bold;
+        font-size: 18px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid @page-header-border-color;
+        margin-top: 30px;
+    }
+
+    small {
+        color: @text-muted;
+        display: block;
+    }
+
+    code {
+        margin-top: 3px;
+    }
+
+    ul {
+        margin-bottom: 20px;
+
+        li {
+            margin-bottom: 10px;
         }
     }
 }
