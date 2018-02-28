@@ -8,14 +8,14 @@
     <meta name="apple-itunes-app" content="app-id=1137397744">
     <meta name="theme-color" content="#ffffff">
 
-    <title> Free Open Source Password Manager | bitwarden</title>
+    <title> Free Open Source Password Manager | Bitwarden</title>
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet" />
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic"
           rel="stylesheet" type="text/css">
 
-    <link href="/css/styles.min.css?v=1516368955"
+    <link href="/css/styles.min.css?v=1519791106"
           rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
@@ -104,7 +104,7 @@
             <h3>How do you stay safe?</h3>
             <p>
                 Security experts recommend that you use a different, randomly generated password for every online account
-                that you create. But how are you suppose to remember and keep up with that many passwords? bitwarden
+                that you create. But how are you supposed to remember and keep up with that many passwords? Bitwarden
                 helps you create and manage secure passwords so that you can get back to enjoying your life online.
             </p>
         </div>
@@ -127,7 +127,7 @@
                         Enterprise Solutions
                     </a>
                 </p>
-                <small class="text-muted">bitwarden can help secure your team</small>
+                <small class="text-muted">Bitwarden can help secure your team</small>
             </div>
         </div>
     </div>
@@ -146,7 +146,7 @@
             </p>
             <p>
                 Since all of your data is fully encrypted before it ever leaves your device, <u>only you</u> have access to it.
-                Not even the team at bitwarden can read your data, even if we wanted to. Your data is sealed with
+                Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with
                 <a href="https://en.wikipedia.org/wiki/End-to-end_encryption" target="_blank" rel="noopener"
                    onclick="gaEvent('End-to-end encryption')">end-to-end AES-256 bit encryption</a>,
                 <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener"
@@ -157,7 +157,7 @@
             <p>
                 <a href="https://help.bitwarden.com/security/" target="_blank" rel="noopener"
                    onclick="gaEvent('Learn More Security')">
-                    <i class="fa fa-long-arrow-right fa-fw"></i>Learn more about bitwarden security
+                    <i class="fa fa-long-arrow-right fa-fw"></i>Learn more about Bitwarden security
                 </a>
             </p>
         </div>
@@ -166,10 +166,186 @@
                 <div class="col-md-5 col-sm-6">
                     <h3>Desktop</h3>
                     <p>
-                        Access bitwarden on Windows, macOS, and Linux desktops through our array of browser extensions.
+                        Access Bitwarden on Windows, macOS, and Linux desktops with our native desktop application.
                     </p>
-                    <p class="small text-muted">
-                        * native desktop applications coming soon
+                </div>
+                <div class="col-md-7 col-sm-6 list-desktops">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows"
+                               class="windows" onclick="gaEvent('Windows')">
+                                Windows
+                                <small>Support for Windows 7, 8, and 10</small>
+                                <span>.exe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=macos"
+                               class="macos" onclick="gaEvent('macOS')">
+                                macOS
+                                <small>Support for OS X Mavericks and later</small>
+                                <span>.dmg</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux"
+                               class="linux" onclick="gaEvent('Linux')">
+                                Linux
+                                <small>Support for most distributions</small>
+                                <span>.AppImage</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-muted small" onclick="gaEvent('More Desktop Installation Options')"
+                       data-toggle="modal" data-target="#download-modal">
+                        <i class="fa fa-long-arrow-right fa-fw"></i>more desktop installation options
+                    </a>
+                </div>
+            </div>
+            <div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="download-modal-title">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <span id="download-modal-title">
+                                <i class="fa fa-lg fa-desktop fa-fw"></i> Desktop Installation Options
+                            </span>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Bitwarden offer's a variety of different installation options for the
+                                desktop application. You can find them all listed below.
+                            </p>
+                            <p>
+                                Some options are not capable of automatic updates and are labeled as such.
+                                You should always keep Bitwarden applications up to date.
+                            </p>
+                            <h4>
+                                <i class="fa fa-windows fa-lg fa-fw"></i> Windows
+                                <small>(7, 8, and 10 - x86 and x64)</small>
+                            </h4>
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Standard Installer
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=exe">
+                                            <i class="fa fa-download"></i> Bitwarden-Installer.exe
+                                        </a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Portable App for Flash Drives
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=portable">
+                                            <i class="fa fa-download"></i> Bitwarden-Portable.exe
+                                        </a>
+                                        <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Windows Store
+                                    <small>Coming soon...</small>
+                                    <!--
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=windows&variant=store"
+                                           target="_blank">
+                                            <i class="fa fa-external-link"></i> https://windowsstore.com
+                                        </a>
+                                    </small>
+                                    -->
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Chocolatey Package Manager<br />
+                                    <code>> choco install bitwarden</code>
+                                </li>
+                            </ul>
+                            <h4>
+                                <i class="fa fa-apple fa-lg fa-fw"></i> macOS
+                                <small>(OS X Mavericks and later)</small>
+                            </h4>
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Standard Installer
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=macos&variant=dmg">
+                                            <i class="fa fa-download"></i> Bitwarden.dmg
+                                        </a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Mac App Store
+                                    <small>
+                                        <a href="https://itunes.apple.com/app/bitwarden-password-manager/id1352778147"
+                                           target="_blank">
+                                            <i class="fa fa-external-link"></i>
+                                            https://itunes.apple.com/app/id1352778147
+                                        </a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Homebrew Package Manager<br />
+                                    <code>$ brew cask install bitwarden</code>
+                                </li>
+                            </ul>
+                            <h4><i class="fa fa-linux fa-lg fa-fw"></i> Linux <small>(x64 only)</small></h4>
+                            <ul class="fa-ul">
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Standard Installer
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=appimage">
+                                            <i class="fa fa-download"></i> Bitwarden-x86_64.AppImage
+                                        </a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Ubuntu, Debian, Linux Mint, etc.
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=deb">
+                                            <i class="fa fa-download"></i> Bitwarden-amd64.deb
+                                        </a>
+                                        <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Fedora, CentOS, RHEL, openSUSE, etc.
+                                    <small>
+                                        <a href="https://func.bitwarden.com/api/download?app=desktop&platform=linux&variant=rpm">
+                                            <i class="fa fa-download"></i> Bitwarden-x86_64.rpm
+                                        </a>
+                                        <span class="label label-warning"><i class="fa fa-warning"></i> No Auto-Updates</span>
+                                    </small>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-arrow-right"></i>
+                                    Snap Package Manager<br />
+                                    <small>Coming soon...</small>
+                                    <!--<code>$ snap install bitwarden</code>-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-box">
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <h3>Web Browser</h3>
+                    <p>
+                        Integrate Bitwarden directly into your favorite browser. Use our browser extensions
+                        for a seamless browsing experience.
                     </p>
                 </div>
                 <div class="col-md-7 col-sm-6 list-browsers">
@@ -199,7 +375,7 @@
                         <div class="col-md-6">
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="https://cdn.bitwarden.com/safari-extension/bitwarden-1.24.1.safariextz"
+                                    <a href="https://func.bitwarden.com/api/download?app=browser&platform=safari&variant=safariextz"
                                        target="_blank" rel="noopener" class="safari" onclick="gaEvent('Safari')">Safari</a>
                                 </li>
                                 <li>
@@ -226,7 +402,7 @@
             <div class="row">
                 <div class="col-md-5 col-sm-6">
                     <h3>Mobile</h3>
-                    <p>Take bitwarden on the go with our mobile apps for your phone or tablet device.</p>
+                    <p>Take Bitwarden on the go with our mobile apps for your phone or tablet device.</p>
                 </div>
                 <div class="col-md-7 col-sm-6 list-store">
                     <a href="https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8"
@@ -246,7 +422,7 @@
                     <h3>Web</h3>
                     <p>
                         Stuck without any of your devices? Using a friend's computer? You can access your
-                        bitwarden vault from any web enabled device by using our web vault.
+                        Bitwarden vault from any web enabled device by using our web vault.
                     </p>
                 </div>
                 <div class="col-md-7 col-sm-6">
@@ -274,16 +450,16 @@
         </div>
         <div class="feature-box">
             <p>
-                bitwarden is 100% open source software. The source code for bitwarden is hosted on GitHub and everyone is free
-                to review, audit, and contribute to the bitwarden codebase.
+                Bitwarden is 100% open source software. The source code for Bitwarden is hosted on GitHub and everyone is free
+                to review, audit, and contribute to the Bitwarden codebase.
             </p>
             <p>
-                We believe that being open source is one of the most important features of bitwarden. Source code transparency
-                is an absolute requirement for software solutions like bitwarden.
+                We believe that being open source is one of the most important features of Bitwarden. Source code transparency
+                is an absolute requirement for software solutions like Bitwarden.
             </p>
             <p>
                 <a href="https://github.com/bitwarden" target="_blank" rel="noopener" onclick="gaEvent('Check Out GitHub')">
-                    <i class="fa fa-long-arrow-right fa-fw"></i>Check out bitwarden on GitHub
+                    <i class="fa fa-long-arrow-right fa-fw"></i>Check out Bitwarden on GitHub
                 </a>
             </p>
         </div>
@@ -365,9 +541,9 @@
                 <div class="feature-box force">
                     <h3>Host It Yourself</h3>
                     <p>
-                        Don't want to use the bitwarden cloud? You don't have to. With
+                        Don't want to use the Bitwarden cloud? You don't have to. With
                         <a href="https://www.docker.com" target="_blank" rel="noopener" onclick="gaEvent('Docker')">Docker</a>
-                        you can easily host bitwarden's entire infrastructure stack on the platform of your choice.
+                        you can easily host Bitwarden's entire infrastructure stack on the platform of your choice.
                     </p>
                     <div>
                         <ul class="nav nav-tabs" role="tablist">
@@ -392,7 +568,7 @@
                             </div>
                             <div role="tabpanel" class="tab-pane" id="docker-windows">
                                 <pre class="command-line language-ps"><code class="language-ps"><span class="command-line-prompt"><span data-prompt=">"></span><span></span><span data-prompt=">"></span><span data-prompt=">"></span><span data-prompt=">"></span></span><span class="token function">Invoke-RestMethod</span> <span class="token arg">-OutFile</span> bitwarden.ps1 `
-  <span class="token arg">-Uri</span> https://bit.ly/bw-ps1
+&nbsp;&nbsp;<span class="token arg">-Uri</span> https://bit.ly/bw-ps1
 .\bitwarden.ps1 <span class="token arg">-install</span>
 .\bitwarden.ps1 <span class="token arg">-start</span>
 .\bitwarden.ps1 <span class="token arg">-updatedb</span></code></pre>
@@ -416,7 +592,7 @@
             <div class="col-sm-7">
                 <div class="feature-box">
                     <h3>Developer Chat</h3>
-                    <p>Join us in our Gitter chat channel to talk with the bitwarden developers.</p>
+                    <p>Join us in our Gitter chat channel to talk with the Bitwarden developers.</p>
                     <p>
                         <a class="btn btn-default btn-xl" href="https://gitter.im/bitwarden/Lobby" target="_blank"
                            rel="noopener" onclick="gaEvent('Join Chat')">
@@ -446,12 +622,11 @@
                     <div class="feature-box">
                         <div class="tier">
                             <h3>FREE</h3>
-                            <p>We believe that security is important for everyone. The core features of bitwarden are 100% free.</p>
+                            <p>We believe that security is important for everyone. The core features of Bitwarden are 100% free.</p>
                             <ul class="fa-ul checklist">
-                                <li><i class="fa fa-li fa-check"></i> Access &amp; install all bitwarden apps</li>
+                                <li><i class="fa fa-li fa-check"></i> Access &amp; install all Bitwarden apps</li>
                                 <li><i class="fa fa-li fa-check"></i> Sync all of your devices, no limits!</li>
                                 <li><i class="fa fa-li fa-check"></i> Store unlimited items in your vault</li>
-                                <li><i class="fa fa-li fa-check"></i> Auto-fill items from your vault</li>
                                 <li>
                                     <i class="fa fa-li fa-check"></i>
                                     Logins, <span class="hidden-sm">secure</span> notes,
@@ -459,6 +634,7 @@
                                 </li>
                                 <li><i class="fa fa-li fa-check"></i> Two-step authentication (2FA)</li>
                                 <li><i class="fa fa-li fa-check"></i> Secure password generator</li>
+                                <li><i class="fa fa-li fa-check"></i> Self-host on your own server (optional)</li>
                             </ul>
                         </div>
                         <div class="personal-button">
@@ -674,7 +850,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <h4><i class="fa fa-check-square-o"></i> On-premise Hosting</h4>
-                    <p>Easily deploy and host bitwarden on-premise with no dependency on external cloud services.</p>
+                    <p>Easily deploy and host Bitwarden on-premise with no dependency on external cloud services.</p>
                 </div>
             </div>
             <div class="text-center">
@@ -733,7 +909,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/114869903467947368993" title="Google+"
+                            <a href="https://plus.google.com/+bitwarden" title="Google+"
                                onclick="gaEvent('Follow Google+')" target="_blank" rel="noopener">
                                 <i class="fa fa-google-plus-square"></i><span class="sr-only">Google+</span>
                             </a>
@@ -752,11 +928,11 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>(window.jQuery || document.write('<script src="lib\/jquery\/jquery.min.js?v=1516368955"><\/script>'));</script>
+    <script>(window.jQuery || document.write('<script src="lib\/jquery\/jquery.min.js?v=1519791106"><\/script>'));</script>
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>((window.jQuery && window.jQuery.fn && window.jQuery.fn.modal) || document.write('<script src="lib\/bootstrap\/js\/bootstrap.min.js?v=1516368955"><\/script>'));</script>
+    <script>((window.jQuery && window.jQuery.fn && window.jQuery.fn.modal) || document.write('<script src="lib\/bootstrap\/js\/bootstrap.min.js?v=1519791106"><\/script>'));</script>
 
-    <script src="/js/bit.min.js?v=1516368955"></script>
+    <script src="/js/bit.min.js?v=1519791106"></script>
 </body>
 </html>
