@@ -7,8 +7,9 @@
     <meta name="google-site-verification" content="Vi91wXbx1HizvJkekJHNKAD-by5OqaNj6A3cT1Qkzt0">
     <meta name="apple-itunes-app" content="app-id=1137397744">
     <meta name="theme-color" content="#ffffff">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
-    <title>{% if page.title %} {{ page.title }} | {% endif %}Bitwarden</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Bitwarden</title>
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet" />
