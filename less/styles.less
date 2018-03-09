@@ -515,10 +515,10 @@ footer {
     display: inline-block;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 185px;
+    width: 265px;
     height: 190px;
-    background-size: 185px, 190px;
-    .img-retina('/images/gitter-hello-world.png', '/images/gitter-hello-world_2x.png', 185px, 190px);
+    background-size: 265px, 190px;
+    .img-retina('/images/hello-world.png', '/images/hello-world_2x.png', 265px, 190px);
 }
 
 .osi {
@@ -912,6 +912,19 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.blocked-buttons {
+    @media(max-width:@screen-xs-max) {
+        .btn-block {
+            width: initial;
+            display: inline-block;
+        }
+
+        > div + div {
+            margin-top: 20px;
+        }
+    }
+}
+
 code {
     border-radius: 2px;
 }
@@ -949,4 +962,11 @@ code {
             margin-bottom: 10px;
         }
     }
+}
+
+.ellipse {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
