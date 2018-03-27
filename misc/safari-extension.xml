@@ -14,7 +14,7 @@
         <key>CFBundleShortVersionString</key>
         <string>1.25.6</string>
         <key>URL</key>
-        <string>https://cdn.bitwarden.com/safari-extension/bitwarden-1.25.5.safariextz</string>
+        <string>https://cdn.bitwarden.com/safari-extension/bitwarden-1.25.6.safariextz</string>
         <key>Update From Gallery</key>
         <true/>
       </dict>
