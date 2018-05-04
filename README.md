@@ -9,7 +9,7 @@ The Bitwarden Website project is written using Jekyll, which is hosted/deployed 
 **Requirements**
 
 - [Node.js](https://nodejs.org)
-- [Gulp](http://gulpjs.com/)
+- [Gulp](https://gulpjs.com/)
 - [Ruby](https://www.ruby-lang.org/)
 - [Jekyll](https://jekyllrb.com/)
 
