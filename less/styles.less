@@ -458,6 +458,32 @@ footer {
     }
 }
 
+a.cli {
+    background: none;
+    width: initial;
+    height: initial;
+
+    img {
+        width: 488px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media(min-width:@screen-md) {
+        display: inline-block;
+        background-position: top left;
+        background-repeat: no-repeat;
+        white-space: nowrap;
+        width: 488px;
+        height: 70px;
+        .img-retina('/images/cli-platforms.png', '/images/cli-platforms_2x.png', 488px, 70px);
+
+        img { 
+            display: none;
+        }
+    }
+}
+
 .list-repos {
     li {
         margin-bottom: 10px;
