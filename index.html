@@ -16,7 +16,7 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic"
           rel="stylesheet" type="text/css">
 
-    <link href="/css/styles.min.css?v=1528567861"
+    <link href="/css/styles.min.css?v=1532054950"
           rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
@@ -704,84 +704,90 @@
                 <h2>Personal Accounts</h2>
                 <p><i>Create a personal vault to securely manage all of your online credentials.</i></p>
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="feature-box">
-                        <div class="tier">
-                            <h3>FREE</h3>
-                            <p>
-                                We believe that security is important for everyone. The core features of Bitwarden
-                                are 100% free.
-                            </p>
-                            <ul class="fa-ul checklist">
-                                <li><i class="fa fa-li fa-check"></i> Access &amp; install all Bitwarden apps</li>
-                                <li><i class="fa fa-li fa-check"></i> Sync all of your devices, no limits!</li>
-                                <li><i class="fa fa-li fa-check"></i> Store unlimited items in your vault</li>
-                                <li>
-                                    <i class="fa fa-li fa-check"></i>
-                                    Logins, <span class="hidden-sm">secure</span> notes,
-                                    <span class="hidden-sm">credit</span> cards, &amp; identities
-                                </li>
-                                <li><i class="fa fa-li fa-check"></i> Two-step authentication (2FA)</li>
-                                <li><i class="fa fa-li fa-check"></i> Secure password generator</li>
-                                <li><i class="fa fa-li fa-check"></i> Self-host on your own server (optional)</li>
-                            </ul>
+            <div class="row feature-box plans plans-personal">
+                <div class="col-md-5 col-md-offset-1 col-sm-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                Free
+                            </div>
+                            <div class="panel-body">
+                                <div class="prices">
+                                    <span class="price">FREE</span>
+                                    <span class="interval">forever</span>
+                                    <div class="additional">
+                                        We believe that security is important for everyone.
+                                        The core features of Bitwarden are 100% free.
+                                    </div>
+                                </div>
+                                <ul class="fa-ul checklist">
+                                    <li><i class="fa fa-li fa-check"></i> Access &amp; install all Bitwarden apps</li>
+                                    <li><i class="fa fa-li fa-check"></i> Sync all of your devices, no limits!</li>
+                                    <li><i class="fa fa-li fa-check"></i> Store unlimited items in your vault</li>
+                                    <li>
+                                        <i class="fa fa-li fa-check"></i>
+                                        Logins, secure notes,
+                                        <span class="hidden-sm">credit</span> cards, &amp; identities
+                                    </li>
+                                    <li><i class="fa fa-li fa-check"></i> Two-step authentication (2FA)</li>
+                                    <li><i class="fa fa-li fa-check"></i> Secure password generator</li>
+                                    <li><i class="fa fa-li fa-check"></i> Self-host on your own server (optional)</li>
+                                </ul>
+                            </div>
+                            <div class="panel-footer">
+                                <a class="btn btn-block btn-primary" href="https://vault.bitwarden.com/#/register"
+                                    onclick="gaEvent('Get Started Create Account')">
+                                    <i class="fa fa-pencil-square-o hidden-xxs"></i>
+                                    Create a FREE Account
+                                </a>
+                            </div>
                         </div>
-                        <div class="personal-button">
-                            <a class="btn btn-default btn-xl" href="https://vault.bitwarden.com/#/register"
-                               onclick="gaEvent('Get Started Create Account')">
-                                <i class="fa fa-pencil-square-o hidden-xxs"></i>
-                                Create a FREE Account
-                            </a>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="feature-box force">
-                        <div class="tier">
-                            <h3>Premium</h3>
-                            <p>Upgrade your personal account to premium and unlock some great additional features.</p>
-                            <ul class="fa-ul checklist">
-                                <li>
-                                    <i class="fa fa-li fa-check"></i>
-                                    Everything from<span class="hidden-sm hidden-xs"> a</span>
-                                    free<span class="hidden-sm hidden-xs"> account</span>, plus:
-                                </li>
-                            </ul>
-                            <ul class="fa-ul checklist">
-                                <li><i class="fa fa-li fa-check"></i> 1GB encrypted file storage</li>
-                                <li>
-                                    <i class="fa fa-li fa-check"></i> 2FA with
-                                    <a href="https://www.yubico.com/" onclick="gaEvent('YubiKey')" target="_blank"
-                                       rel="noopener">
-                                       YubiKey
-                                    </a>,
-                                    <a href="https://www.yubico.com/solutions/fido-u2f/" onclick="gaEvent('U2F')"
-                                       target="_blank" rel="noopener"><span class="hidden-xxs">
-                                           FIDO </span>U2F
-                                    </a>, &amp;
-                                    <a href="https://duo.com/" target="_blank" rel="noopener" onclick="gaEvent('Duo')">
-                                        Duo
-                                    </a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-li fa-check"></i>
-                                    <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm"
-                                       onclick="gaEvent('TOTP')" target="_blank" rel="noopener">TOTP</a>
-                                    key storage &amp; code gen<span class="hidden-xxs">erator</span>
-                                </li>
-                                <li><i class="fa fa-li fa-check"></i> Priority customer support</li>
-                            </ul>
-                            <p class="premium-price">All for just <strong>$10 /year</strong></p>
+                <div class="col-md-5 col-sm-6">
+                        <div class="panel panel-secondary">
+                            <div class="panel-heading">
+                                Premium
+                            </div>
+                            <div class="panel-body">
+                                <div class="prices">
+                                    <span class="price">$10</span>
+                                    <span class="interval">/year</span>
+                                    <div class="additional">
+                                        Upgrade your personal account to premium and unlock some great
+                                        additional features.
+                                    </div>
+                                </div>
+                                <p><u>All free features</u>, plus:</p>
+                                <ul class="fa-ul checklist">
+                                    <li><i class="fa fa-li fa-check"></i> 1GB encrypted file storage</li>
+                                    <li>
+                                        <i class="fa fa-li fa-check"></i> Two-step login with
+                                        <a href="https://www.yubico.com/" onclick="gaEvent('YubiKey')" target="_blank"
+                                            rel="noopener">
+                                            YubiKey</a>,
+                                        <a href="https://www.yubico.com/solutions/fido-u2f/" onclick="gaEvent('U2F')"
+                                            target="_blank" rel="noopener"><span class="hidden-sm">
+                                                FIDO </span>U2F</a>, &amp;
+                                        <a href="https://duo.com/" target="_blank" rel="noopener"
+                                            onclick="gaEvent('Duo')">
+                                            Duo</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-li fa-check"></i>
+                                        <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm"
+                                            onclick="gaEvent('TOTP')" target="_blank" rel="noopener">TOTP</a>
+                                        authenticator key storage &amp; code gen<span class="hidden">erator</span>.
+                                    </li>
+                                    <li><i class="fa fa-li fa-check"></i> Priority customer support</li>
+                                </ul>
+                            </div>
+                            <div class="panel-footer">
+                                <a class="btn btn-block btn-secondary" href="https://vault.bitwarden.com/#/?premium=purchase"
+                                    onclick="gaEvent('Get Started Upgrade Premium')">
+                                    <i class="fa fa-star hidden-xxs"></i>
+                                    Upgrade to Premium
+                                </a>
+                            </div>
                         </div>
-                        <div class="personal-button">
-                            <a class="btn btn-default btn-xl" href="https://vault.bitwarden.com/#/?premium=purchase"
-                               onclick="gaEvent('Get Started Upgrade Premium')">
-                                <i class="fa fa-star hidden-xxs"></i>
-                                Upgrade to Premium
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -799,7 +805,7 @@
                             <div class="col-sm-6">
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">
-                                        FREE
+                                        Free
                                     </div>
                                     <div class="panel-body">
                                         <div class="prices">
@@ -1045,11 +1051,11 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>(window.jQuery || document.write('<script src="lib\/jquery\/jquery.min.js?v=1528567861"><\/script>'));</script>
+    <script>(window.jQuery || document.write('<script src="lib\/jquery\/jquery.min.js?v=1532054950"><\/script>'));</script>
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>((window.jQuery && window.jQuery.fn && window.jQuery.fn.modal) || document.write('<script src="lib\/bootstrap\/js\/bootstrap.min.js?v=1528567861"><\/script>'));</script>
+    <script>((window.jQuery && window.jQuery.fn && window.jQuery.fn.modal) || document.write('<script src="lib\/bootstrap\/js\/bootstrap.min.js?v=1532054950"><\/script>'));</script>
 
-    <script src="/js/bit.min.js?v=1528567861"></script>
+    <script src="/js/bit.min.js?v=1532054950"></script>
 </body>
 </html>
