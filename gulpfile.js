@@ -9,8 +9,7 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     merge = require('merge-stream'),
     gulpUtil = require('gulp-util'),
-    child = require('child_process'),
-    browserSync = require('browser-sync').create();
+    child = require('child_process');
 
 var paths = {};
 paths.dist = './_site/';
@@ -138,16 +137,6 @@ gulp.task('jekyll:build', function (cb) {
 
 gulp.task('jekyll:serve', function (cb) {
     return jekyll(['serve', '--watch', '--host=0.0.0.0'], cb);
-});
-
-gulp.task('serve', () => {
-    return browserSync.init({
-        files: [paths.dist + '/**'],
-        port: 4009,
-        server: {
-            baseDir: paths.dist
-        }
-    });
 });
 
 gulp.task('default', function (cb) {
