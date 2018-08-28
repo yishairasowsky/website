@@ -10,11 +10,11 @@
         <key>Developer Identifier</key>
         <string>LTZ2PFU5D6</string>
         <key>CFBundleVersion</key>
-        <string>1.28.0</string>
+        <string>1.31.2</string>
         <key>CFBundleShortVersionString</key>
-        <string>1.28.0</string>
+        <string>1.31.2</string>
         <key>URL</key>
-        <string>https://cdn.bitwarden.com/safari-extension/bitwarden-1.28.0.safariextz</string>
+        <string>https://cdn.bitwarden.com/safari-extension/bitwarden-1.31.2.safariextz</string>
         <key>Update From Gallery</key>
         <true/>
       </dict>
