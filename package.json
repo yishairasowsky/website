@@ -1,6 +1,9 @@
 {
   "name": "bitwarden",
   "version": "0.0.0",
+  "scripts": {
+    "deploy": "jekyll build && gh-pages -d _site"
+  },
   "devDependencies": {
     "gulp": "3.9.1",
     "gulp-concat": "2.6.1",
@@ -16,6 +19,7 @@
     "font-awesome": "4.7.0",
     "bootstrap": "3.3.7",
     "gulp-util": "3.0.8",
-    "child_process": "1.0.2"
+    "child_process": "1.0.2",
+    "gh-pages": "^1.2.0"
   }
 }
