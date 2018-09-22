@@ -9,13 +9,12 @@ The Bitwarden Website project is written using Jekyll, which is hosted/deployed 
 **Requirements**
 
 - [Node.js](https://nodejs.org)
-- [Gulp](https://gulpjs.com/)
 - [Ruby](https://www.ruby-lang.org/)
 - [Jekyll](https://jekyllrb.com/)
 
 Run the following commands:
 - `npm install`
-- `gulp`
+- `npm run build:watch`
 
 You can now access the website at `http://localhost:4010`.
 
