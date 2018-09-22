@@ -9,4 +9,3 @@ js/bit.min.js
 .vs/
 npm-debug.log
 *.bat
-!.well-known/
