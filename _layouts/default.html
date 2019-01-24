@@ -8,6 +8,7 @@
     <meta name="apple-itunes-app" content="app-id=1137397744">
     <meta name="theme-color" content="#ffffff">
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    {% if page.noindex %}<meta name="robots" content="noindex,nofollow" />{% endif %}
 
     <title>{% if page.title %}{{ page.title }} | {% endif %}Bitwarden</title>
 
